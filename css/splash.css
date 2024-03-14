@@ -116,7 +116,7 @@ main h3 a,
 main h3 em {
     font-family: 'Orbitron';
     letter-spacing: 0.125em;
-    text-shadow: 2px 2px 0px rgb(45, 50, 112);
+    text-shadow: -2px 2px 0px rgb(0, 0, 0);
     text-transform: uppercase;
 }
 
@@ -128,7 +128,7 @@ main h3 em {
 
 
 main h3 {
-    text-shadow: 1px 1px 0px rgb(45, 50, 112);
+    text-shadow: -1px 1px 0px rgb(0, 0, 0);
 }
 
 
@@ -177,7 +177,7 @@ hr {
     width: 66vw;
     max-width: 800px;
     border: 1px solid white;
-    box-shadow: 2px 2px 0px rgb(45, 50, 112);
+    box-shadow: -2px 2px 0px rgb(0, 0, 0);
 }
 
 
@@ -318,7 +318,7 @@ body .zoom {
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.1875em;
-    box-shadow: 0em 0em 0.25em 0.25em rgba(0, 0, 0, 0.75);
+    box-shadow: 0em 0em 0.25em 0.25em rgba(0, 0, 0, 0);
 }
 
 
