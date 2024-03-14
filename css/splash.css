@@ -91,6 +91,11 @@ video {
 }
 
 
+div {
+  padding: 50px 50px 50px 50px;
+}
+
+
 header,
 header img {
     margin: auto;
