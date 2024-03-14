@@ -90,12 +90,6 @@ video {
   z-index: -100;
 }
 
-
-div {
-  padding: 50px 50px 50px 50px;
-}
-
-
 header,
 header img {
     margin: auto;
@@ -231,7 +225,7 @@ main section:nth-of-type(odd) p {
 
 
 img.zoomable {
-    max-width: 40%;
+    max-width: 60%;
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
@@ -391,14 +385,14 @@ section.posters img.zoomable {
 }
 
 
-#bs01-logo,
+#bh-logo,
 #mod-logo {
     position: fixed;
 }
 
 
-#bs01-logo:hover,
-#bs01-logo:active,
+#bh-logo:hover,
+#bh-logo:active,
 #mod-logo:hover,
 #mod-logo:active {
     cursor: pointer;
@@ -406,7 +400,7 @@ section.posters img.zoomable {
 }
 
 
-#bs01-logo {
+#bh-logo {
     top: 0;
     left: 0;
 }

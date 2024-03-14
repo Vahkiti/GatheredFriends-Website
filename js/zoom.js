@@ -42,7 +42,7 @@ function addZoomEventListeners() {
             zoom.classList.add("zoom");
 
             document.body.appendChild(zoom);
-            zoom.innerHTML += '<iframe width="560" height="315" src="https://www.youtube.com/embed/1dRfg_r6oOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            zoom.innerHTML += '<iframe width="854" height="480" src="https://www.youtube.com/embed/_xvtLpssj1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 
             let exit = document.createElement("span");
             exit.classList.add("exitSpan");

@@ -374,20 +374,20 @@ section.posters img.zoomable {
   margin-bottom: 1em;
 }
 
-#bs01-logo,
+#bh-logo,
 #mod-logo {
   position: fixed;
 }
 
-#bs01-logo:hover,
-#bs01-logo:active,
+#bh-logo:hover,
+#bh-logo:active,
 #mod-logo:hover,
 #mod-logo:active {
   cursor: pointer;
   filter: brightness(0.75);
 }
 
-#bs01-logo {
+#bh-logo {
   top: 0;
   left: 0;
 }
