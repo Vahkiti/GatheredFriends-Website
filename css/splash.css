@@ -357,6 +357,27 @@ span.exitSpan:active {
     transform: scale(0.9875);
 }
 
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  padding-top: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 75%;
+  height: 75%;
+  border: none;
+}
 
 /**********************
  * POSTER PAGE STYLES *
