@@ -4,8 +4,15 @@ header {
     justify-content: space-between;
     background-color: rgba(45, 50, 112, .75);
     align-items: center;
-    padding: 1%;
-    height: 16vh;
+    padding: 0px;
+    height: 0px;
+	max-height: 0vh;
+	transition: 0.2s;
+}
+
+header img,
+#enter {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 640px) {
@@ -23,6 +30,10 @@ header {
         max-width: 0px !important;
         gap: .375rem !important;
     }
+	
+	div.landing {
+		font-size: 2vw;
+	}
 }
 
 div.gfimg__container {
@@ -66,6 +77,29 @@ div.bhimg__container img {
 
 div.bhimg__container img.bhlogo {
     max-width: 70%;
+}
+
+div.splash {
+	display: all;
+}
+
+div.landing {
+	display: flex;
+	flex-direction: column;
+	object-fit: contain;
+	align-items: center;
+    justify-content: center;
+}
+
+div.landing img.splashlogo {
+	padding-top: 50px;
+	min-width: 25vw;
+	max-width: 250px;
+}
+
+div.landing img.splashtext {
+	min-width: 25vw;
+	max-width: 250px;
 }
 
 

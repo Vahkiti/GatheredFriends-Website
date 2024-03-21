@@ -21,7 +21,7 @@
 	<meta name="twitter:image:alt" content="Gathered Friends" />
 	<!-- END OF OGP DATA -->
 	<link rel="stylesheet" type="text/css" href="css/universal.css">
-	<link rel="stylesheet" type="text/css" href="css/splash.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 	<title>Gathered Friends: A BIONICLE Book Club Podcast</title>
 </head>
@@ -35,27 +35,44 @@
 		<img id="mod-logo" alt="Mask of Destiny" title="Mask of Destiny Linktree" src="img/chips/mod.webp" width="64"
 			height="64">
 	</a>
-	<header>
-		<div class="center">
-			<br><br>
-			<img class="logo" src="img/GF5th-IconTrans.webp">
-			<br>
-			<img class="logotext" src="img/GF5th-Text.webp">
-		</div>
+	<header id="header">
+		<div class="gfimg__container" onclick="window.location.href=''">
+			<img class="gflogo" src="img/GF5th-IconTrans.webp">
+			<img class="gftext" src="img/GF5th-Text.webp">
+		</div>		
+		<div class="bhimg__container">
+			<img class="bhlogo" src="img/BHLogo.webp">
+		</div>	
 	</header>
 	<main>
-		<h4>Coming soon...</h4>
-		<br>
-		<!--<h1><h1><a href="home">Enter site</a></h1>-->
-		<hr>
-		<h1><a class="trailerButton" style="cursor: pointer;">Listen again to our legend</a></h1>
-		<br><br>
-		<video src="img/GFBG.webm"" type=" video/webm" width="100%" playsinline autoplay loop muted>
+		<div id="splash">
+			<div class="landing">
+				<img class="splashlogo" src="img/GF5th-IconTrans.webp">
+				<img class="splashtext" src="img/GF5th-Text.webp">
+				<br>
+				<h1><h1><a id="enter">Enter site</a></h1>
+				<hr>
+				<h1><a class="trailerButton" style="cursor: pointer;">Listen again to our legend</a></h1>
+				<br><br>
+				<video src="img/GFBG.webm"" type=" video/webm" width="100%" playsinline autoplay loop muted>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<p>Site designed by <a href="https://linktr.ee/Vahkiti" target="_blank">Vahkiti</a> of <a
 				href="https://810nicleday.com/" target="_blank">810NICLE Day</a>.</p>
 	</footer>
+	<script>
+	function entersite() {
+	  document.getElementById("header").style.height = "16vh";
+	  document.getElementById("header").style.padding = "1%";
+	  document.getElementById("header").style.maxHeight = "100%";
+	  document.getElementById("splash").style.display = "none";
+	}
+	document.getElementById('enter').onclick = function () {
+		entersite();
+	};
+	</script>
 	<script src="js/jquery/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery/jquery-ui-1.13.0/jquery-ui.min.js"></script>
 	<script src="js/zoom.js"></script>
