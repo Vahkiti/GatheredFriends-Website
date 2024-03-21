@@ -104,6 +104,7 @@ div.landing img.splashtext {
 }
 
 div.panels img.CornerPanelL {
+	margin-top: 0px;
 	max-height: 50%;
 	height: auto;
 	z-index: -1;
