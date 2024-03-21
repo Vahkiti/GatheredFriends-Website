@@ -103,6 +103,22 @@ div.landing img.splashtext {
 	max-width: 250px;
 }
 
+div.panels img.CornerPanelL {
+	margin-top: 0px;
+	max-height: 50%;
+	height: auto;
+	z-index: -1;
+	position: absolute;
+}
+
+div.panels img.CornerPanelR {
+	max-height: 50%;
+	height: auto;
+	z-index: -1;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
 
 body {
     background-image: url("../img/Background.webp");
