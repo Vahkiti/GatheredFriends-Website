@@ -64,19 +64,20 @@
 			</div>
 		</div>
 	</main>
-	<footer>
-		<p>Site designed by <a href="https://linktr.ee/Vahkiti" target="_blank">Vahkiti</a> of <a href="https://810nicleday.com/" target="_blank">810NICLE Day</a>.</p>
+	<footer class="footer">
+		<p>Site designed by <a href="https://linktr.ee/Vahkiti" target="_blank">Vahkiti</a> of <a href="https://810nicleday.com/" target="_blank">810NICLE Day</a>. 
+		<br>Gathered Friends & the Gathered Friends logo © 2024 The Beaverhouse, All Rights Reserved.</p>
 	</footer>
 	<script>
-	function entersite() {
-	  document.getElementById("header").style.height = "16vh";
-	  document.getElementById("header").style.padding = "1%";
-	  document.getElementById("header").style.maxHeight = "100%";
-	  document.getElementById("splash").style.display = "none";
-	}
-	document.getElementById('enter').onclick = function () {
-		entersite();
-	};
+		function entersite() {
+			document.getElementById("header").style.height = "16vh";
+			document.getElementById("header").style.maxHeight = "16vh";
+			document.getElementById("header").style.padding = "1%";			
+			document.getElementById("splash").style.display = "none";
+		}
+		document.getElementById('enter').onclick = function () {
+			entersite();
+		};
 	</script>
 	<script src="js/jquery/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery/jquery-ui-1.13.0/jquery-ui.min.js"></script>
