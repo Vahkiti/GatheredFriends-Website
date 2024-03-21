@@ -140,6 +140,14 @@ video {
     z-index: -100;
 }
 
+main {
+    margin: auto;
+    max-width: 80vw;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
 main h1,
 main h2,
 main h3,
