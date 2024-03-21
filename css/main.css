@@ -10,7 +10,8 @@ header {
 	transition: 0.2s;
 }
 
-header img,
+header img.gflogo,
+header img.gftext,
 #enter {
   cursor: pointer;
 }
