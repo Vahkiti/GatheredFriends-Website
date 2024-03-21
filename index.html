@@ -26,19 +26,21 @@
 	<title>Gathered Friends: A BIONICLE Book Club Podcast</title>
 </head>
 
-<body>
-	<a id="bh-logo-wrapper" href="https://linktr.ee/TheBeaverhouse" target="_blank">
-		<img id="bh-logo" alt="The Beaverhouse" title="The Beaverhouse Linktree" src="img/chips/bh.webp" width="64"
-			height="80">
-	</a>
-	<a id="mod-logo-wrapper" href="https://linktr.ee/MaskofDestiny" target="_blank">
-		<img id="mod-logo" alt="Mask of Destiny" title="Mask of Destiny Linktree" src="img/chips/mod.webp" width="64"
-			height="80">
-	</a>
-	<div id="overlays">
-		<div class="panels">
-			<img class="CornerPanelL" src="img/CornerPanelL.webp">
-			<img class="CornerPanelR" src="img/CornerPanelR.webp">
+<body id="scrollfix">
+	<div id="preheader">
+		<a id="bh-logo-wrapper" href="https://linktr.ee/TheBeaverhouse" target="_blank">
+			<img id="bh-logo" alt="The Beaverhouse" title="The Beaverhouse Linktree" src="img/chips/bh.webp" width="64"
+				height="80">
+		</a>
+		<a id="mod-logo-wrapper" href="https://linktr.ee/MaskofDestiny" target="_blank">
+			<img id="mod-logo" alt="Mask of Destiny" title="Mask of Destiny Linktree" src="img/chips/mod.webp" width="64"
+				height="80">
+		</a>
+		<div id="overlays">
+			<div class="panels">
+				<img class="CornerPanelL" src="img/CornerPanelL.webp">
+				<img class="CornerPanelR" src="img/CornerPanelR.webp">
+			</div>
 		</div>
 	</div>
 	<header id="header">
@@ -56,33 +58,32 @@
 				<img class="splashlogo" src="img/GF5th-IconTrans.webp">
 				<img class="splashtext" src="img/GF5th-Text.webp">
 				<br>
-				<h1>
-					<h1><a id="enter">ENTER SITE</a></h1>
-					<hr>
-					<h1><a class="trailerButton" style="cursor: pointer;">LISTEN AGAIN TO OUR LEGEND</a></h1>
-					<br><br>
-					<video src="img/GFBG.webm"" type=" video/webm" width="100%" playsinline autoplay loop muted>
+				<h1><a id="enter">ENTER SITE</a></h1>
+				<hr>
+				<h2><a class="trailerButton" style="cursor: pointer;">LISTEN TO OUR LEGEND</a></h2>
+				<br><br>
+				<video src="img/GFBG.webm"" type=" video/webm" width="100%" playsinline autoplay loop muted>
 			</div>
 		</div>
 	</main>
 	<footer class="footer">
 		<p>Site designed by <a href="https://linktr.ee/Vahkiti" target="_blank">Vahkiti</a> of <a
-				href="https://810nicleday.com/" target="_blank">810NICLE Day</a>.
+				href="https://810NICLEDay.com/" target="_blank">810NICLE Day</a>.
 			<br>Gathered Friends & the Gathered Friends logo ©2024 <a id="bh-logo-wrapper"
 				href="http://YouTube.com/Vahkiti/" target="_blank">The Beaverhouse</a>, All Rights Reserved.
 		</p>
 	</footer>
 	<script>
-		function entersite() {
-			document.getElementById("splash").classList.toggle('fade');
+		function entersite() {			
 			document.getElementById("header").style.height = "16vh";
 			document.getElementById("header").style.maxHeight = "16vh";
 			document.getElementById("header").style.padding = "1%";
-			document.getElementById("splash").style.opacity = "0";
+			document.getElementById("splash").classList.toggle('fade');
 
 			// Wait one second, then set the display to none.
 			setTimeout(function () {
 				document.getElementById("splash").style.display = "none";
+				document.getElementById("scrollfix").style.overflow = "visible";
 			}, 1000);
 		}
 		document.getElementById('enter').onclick = function () {

@@ -46,6 +46,21 @@ footer br {
 	display: none;
 }
 
+div.panels img.CornerPanelL {
+	max-height: 50%;
+	height: auto;
+	z-index: -1;
+	position: absolute;
+}
+
+div.panels img.CornerPanelR {
+	max-height: 50%;
+	height: auto;
+	z-index: -1;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
 
 @media screen and (max-width: 640px) {
     header {
@@ -73,6 +88,18 @@ footer br {
 	
 	footer br {
 		display: block;
+	}
+
+	div.panels img.CornerPanelL {
+		max-height: 40%;
+	}
+
+	div.panels img.CornerPanelR {
+		max-height: 40%;
+	}
+	
+	#splash {
+		margin-top: 15vh;
 	}
 }
 
@@ -136,22 +163,6 @@ div.landing img.splashlogo {
 div.landing img.splashtext {
 	min-width: 25vw;
 	max-width: 250px;
-}
-
-div.panels img.CornerPanelL {
-	max-height: 50%;
-	height: auto;
-	z-index: -1;
-	position: absolute;
-}
-
-div.panels img.CornerPanelR {
-	max-height: 50%;
-	height: auto;
-	z-index: -1;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
 }
 
 body {
@@ -385,6 +396,10 @@ span.exitSpan:active {
     border: none;
 }
 
+#scrollfix {
+	overflow: hidden;
+}
+
 #bh-logo,
 #mod-logo {
     position: fixed;
@@ -410,11 +425,12 @@ span.exitSpan:active {
 
 #splash {
 	opacity: 1;
-	transition: opacity 1s ease-in-out all;
+	transition: ease-in-out all 1s;
 }
 
 #splash.fade {
 	opacity: 0;
+	z-index: -2;
 }
 
 div.center {
