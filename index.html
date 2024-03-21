@@ -79,6 +79,11 @@
 			document.getElementById("header").style.maxHeight = "16vh";
 			document.getElementById("header").style.padding = "1%";
 			document.getElementById("splash").style.opacity = "0";
+
+			// Wait one second, then set the display to none.
+			setTimeout(function () {
+				document.getElementById("splash").style.display = "none";
+			}, 1000);
 		}
 		document.getElementById('enter').onclick = function () {
 			entersite();
