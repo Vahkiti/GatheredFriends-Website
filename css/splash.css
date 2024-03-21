@@ -80,6 +80,23 @@ body {
 }
 
 
+div.center {
+  text-align: center;
+}
+
+
+img.logo {
+	width: 25vw;
+	min-width: 300px;
+}
+
+
+img.logotext {
+	width: 25vw;
+	min-width: 300px;
+}
+
+
 video {
   object-fit: cover;
   width: 100vw;
@@ -372,9 +389,4 @@ footer {
     margin: 0em;
     text-align: center;
     color: white;
-}
-
-
-div.center {
-  text-align: center;
 }
