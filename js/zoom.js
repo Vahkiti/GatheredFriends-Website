@@ -34,7 +34,7 @@ function addZoomEventListeners() {
         });
     }
 
-    let trailerButtons = document.querySelectorAll("main > h1 > a.trailerButton");
+    let trailerButtons = document.querySelectorAll("main > div > div > h1 > a.trailerButton");
 
     for (var i = 0; i < trailerButtons.length; i++) {
         trailerButtons[i].addEventListener("click", function () {
