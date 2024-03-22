@@ -95,7 +95,7 @@ function ShrinkHeader() {
 
 function HidePage() {
 	document.getElementById('splash').style.display = "none";
-	document.getElementById('home').style.display = "none";
+	document.getElementById('homepage').style.display = "none";
 }
 
 function FadePage() {
