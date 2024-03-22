@@ -72,6 +72,7 @@ div.panels img.CornerPanelL {
 	height: auto;
 	z-index: -1;
 	position: fixed;
+	filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.7));
 }
 
 div.panels img.CornerPanelR {
@@ -81,6 +82,7 @@ div.panels img.CornerPanelR {
 	position: fixed;
 	right: 0px;
 	bottom: 0px;
+	filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 div.gfimg__container {
