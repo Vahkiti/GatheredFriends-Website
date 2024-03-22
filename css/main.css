@@ -67,11 +67,6 @@ header {
 	z-index: -1;
 }
 
-header.img {
-  cursor: pointer;
-  filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
-}
-
 div.panels img.CornerPanelL {
 	max-height: 55%;
 	height: auto;
@@ -96,6 +91,8 @@ div.gfimg__container {
     height: 100%;
     width: 100%;
     max-width: 33.33vw;
+	cursor: pointer;
+	filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 div.gfimg__container img {
@@ -125,6 +122,8 @@ div.bhimg__container {
 div.bhimg__container img {
     max-height: 100%;
     max-width: 50%;
+	cursor: pointer;
+	filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 div.bhimg__container img.bhlogo {
