@@ -44,6 +44,7 @@
 	}
 	
 	#splash {
+		display: none;
 		margin-top: 15vh;
 	}
 
@@ -434,6 +435,11 @@ footer br {
 }
 
 #splash {
+	opacity: 1;
+	transition: ease-in-out all 0.5s;
+}
+
+#homepage {
 	opacity: 1;
 	transition: ease-in-out all 0.5s;
 }
