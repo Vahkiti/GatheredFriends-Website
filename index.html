@@ -24,7 +24,7 @@
 		<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 		<title>Gathered Friends: A BIONICLE Book Club Podcast</title>
 	</head>
-	<body id="scrollfix">
+	<body>
 		<div id="preheader">
 			<a id="bh-logo-wrapper" href="https://linktr.ee/TheBeaverhouse" target="_blank">
 				<img id="bh-logo" alt="The Beaverhouse" title="The Beaverhouse Linktree" src="img/chips/bh.webp" width="64"
@@ -42,7 +42,7 @@
 			</div>			
 		</div>
 		<header id="header">
-			<div class="gfimg__container" onclick="window.location.href=''">
+			<div class="gfimg__container" id="landing">
 				<img class="gflogo" src="img/GF5th-IconTrans.webp">
 				<img class="gftext" src="img/GF5th-Text.webp">
 			</div>
@@ -50,7 +50,7 @@
 				<img class="bhlogo" src="img/BHLogo.webp">
 			</div>
 			<div id="navigation">
-				<span id="navtext"><h2><a href="/home">HOME</a> I <a href="/about">ABOUT</a> I <a href="/watch">WATCH</a> I <a href="/read">READ</a> I <a href="/contact">CONTACT</a></h2></span>
+				<span id="navtext"><h2><a id="home" href="#Home">HOME</a> I <a id="about" href="#About">ABOUT</a> I <a id="watch" href="#Watch">WATCH</a> I <a id="read" href="#Read">READ</a> I <a id="contact" href="#Contact">CONTACT</a></h2></span>
 			</div>			
 		</header>		
 		<main>
@@ -60,7 +60,7 @@
 					<img class="splashtext" src="img/GF5th-Text.webp">
 					<!--<h4>Coming soon...</h4>-->		
 					<br>
-					<h1><a id="enter">ENTER SITE</a></h1>
+					<h1><a id="enter" href="#Home" style="cursor: pointer;">ENTER SITE</a></h1>
 					<hr>
 					<h2><a class="trailerButton" style="cursor: pointer;">LISTEN TO OUR LEGEND</a></h2>
 					<br><br>
@@ -75,24 +75,58 @@
 			</p>
 		</footer>
 		<script>
-			function entersite() {			
+			//URL Detection
+			if (window.location.hash == "#Home") {
+				Home();
+			};
+			if (window.location.hash == "#Landing") {
+				Landing();
+			};			
+			
+			// Nav Buttons 
+			document.getElementById('enter').onclick = function () {
+				Home();
+			}			
+			document.getElementById('landing').onclick = function () {
+				Landing();
+				window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#Landing"
+			}
+			
+			//Fade Functions
+			function Home() {								
 				document.getElementById("header").style.height = "22vh";
 				document.getElementById("header").style.maxHeight = "22vh";
 				document.getElementById("header").style.padding = "1%";
 				document.getElementById("navigation").style.paddingTop = "5px";
 				document.getElementById("navigation").style.paddingBottom = "5px";
 				document.getElementById("navtext").style.fontSize = "100%";
-				document.getElementById("splash").classList.toggle('fade');
+				document.getElementById("splash").style.opacity = "0";
+				document.getElementById("splash").style.zIndex = "-2";
 
-				// Wait one second, then set the display to none.
 				setTimeout(function () {
 					document.getElementById("splash").style.display = "none";
-					document.getElementById("scrollfix").style.overflow = "visible";
-				}, 1000);
-			}
-			document.getElementById('enter').onclick = function () {
-				entersite();
-			};
+				}, 500);
+			}		
+			
+			function Landing() {
+				document.getElementById("header").style.height = "0pc";
+				document.getElementById("header").style.maxHeight = "0px";
+				document.getElementById("header").style.padding = "0%";
+				document.getElementById("navigation").style.paddingTop = "0px";
+				document.getElementById("navigation").style.paddingBottom = "0px";
+				document.getElementById("navtext").style.fontSize = "0%";
+				document.getElementById("splash").style.display = "block";			
+				window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#Landing"
+				
+				setTimeout(function () {
+					document.getElementById("splash").style.opacity = "1";
+					document.getElementById("splash").style.zIndex = "-2";
+				}, 1);
+				
+				setTimeout(function () {
+					document.getElementById("splash").style.zIndex = "auto";
+				}, 550);
+			}	
 		</script>
 		<script src="js/jquery/jquery-3.6.0.min.js"></script>
 		<script src="js/jquery/jquery-ui-1.13.0/jquery-ui.min.js"></script>

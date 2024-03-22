@@ -366,10 +366,6 @@ footer br {
 	display: flex;
 }
 
-#scrollfix {
-	overflow: hidden;
-}
-
 #overlays {
 	display: flex;
 }
@@ -438,17 +434,8 @@ footer br {
 }
 
 #splash {
-	opacity: 1;
-	transition: ease-in-out all 0.5s;
-}
-
-#splash.fade {
 	opacity: 0;
-	z-index: -2;
-}
-
-#enter {
-  cursor: pointer;
+	transition: ease-in-out all 0.5s;
 }
 
 .container {
