@@ -55,6 +55,21 @@ function HidePages() {
 			document.getElementById("splash").style.display = "none";
 		}, 500);
 	}
+	else if (home == 0) {
+		
+	}
+	else if (about == 0) {
+		
+	}
+	else if (watch == 0) {
+		
+	}
+	else if (read == 0) {
+		
+	}
+	else if (contact == 0) {
+		
+	}
 }
 
 //Page Contents
