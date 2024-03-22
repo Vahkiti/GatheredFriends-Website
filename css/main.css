@@ -439,7 +439,27 @@ footer br {
 	transition: ease-in-out all 0.5s;
 }
 
-#homepage {
+#home {
+	opacity: 1;
+	transition: ease-in-out all 0.5s;
+}
+
+#about {
+	opacity: 1;
+	transition: ease-in-out all 0.5s;
+}
+
+#watch {
+	opacity: 1;
+	transition: ease-in-out all 0.5s;
+}
+
+#read {
+	opacity: 1;
+	transition: ease-in-out all 0.5s;
+}
+
+#contact {
 	opacity: 1;
 	transition: ease-in-out all 0.5s;
 }

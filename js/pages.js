@@ -17,8 +17,8 @@ else if (window.location.hash == "#landing") {
 	document.getElementById(CurrentPage).style.display = "block";
 	document.getElementById(CurrentPage).style.zIndex = "auto";	
 }
-else if (window.location.hash == "#Home") {
-	CurrentPage = 'homepage';
+else if (window.location.hash == "#home") {
+	CurrentPage = 'home';
 	HidePage();
 	ShowHeader();
 	PrevPage = CurrentPage;
@@ -26,47 +26,47 @@ else if (window.location.hash == "#Home") {
 	document.getElementById(CurrentPage).style.zIndex = "auto";
 
 } 
-else if (window.location.hash == "#About") {
+else if (window.location.hash == "#about") {
 	
 } 
-else if (window.location.hash == "#Watch") {
+else if (window.location.hash == "#watch") {
 	
 } 
-else if (window.location.hash == "#Read") {
+else if (window.location.hash == "#read") {
 	
 } 
-else if (window.location.hash == "#Contact") {
+else if (window.location.hash == "#contact") {
 	
 };
 
 // Nav Buttons
-document.getElementById('landing').onclick = function () {
+document.getElementById('landingbutton').onclick = function () {
 	CurrentPage = 'splash';
 	FadePage(); 
 	HideHeader(); 
 	window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#landing"
 }
-document.getElementById('enter').onclick = function () {
-	CurrentPage = 'homepage';
+document.getElementById('enterbutton').onclick = function () {
+	CurrentPage = 'home';
 	FadePage(); 
 	ShowHeader();
 }
-document.getElementById('home').onclick = function () {
-	CurrentPage = 'homepage'; 
+document.getElementById('homebutton').onclick = function () {
+	CurrentPage = 'home'; 
 	FadePage(); 
 	ShowHeader();
 }
-document.getElementById('about').onclick = function () {
-	
+document.getElementById('aboutbutton').onclick = function () {
+	ShrinkHeader();
 }
-document.getElementById('watch').onclick = function () {
-	
+document.getElementById('watchbutton').onclick = function () {
+	ShrinkHeader();
 }
-document.getElementById('read').onclick = function () {
-	
+document.getElementById('readbutton').onclick = function () {
+	ShrinkHeader();
 }
-document.getElementById('contact').onclick = function () {
-	
+document.getElementById('contactbutton').onclick = function () {
+	ShrinkHeader();
 }
 
 //Fade Functions
@@ -95,7 +95,11 @@ function ShrinkHeader() {
 
 function HidePage() {
 	document.getElementById('splash').style.display = "none";
-	document.getElementById('homepage').style.display = "none";
+	document.getElementById('home').style.display = "none";
+	//document.getElementById('aboutpage').style.display = "none";
+	//document.getElementById('watchpage').style.display = "none";
+	//document.getElementById('readpage').style.display = "none";
+	//document.getElementById('contactpage').style.display = "none";
 }
 
 function FadePage() {
