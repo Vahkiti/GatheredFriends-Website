@@ -8,14 +8,14 @@ if (window.location.hash == "") {
 	PrevPage = CurrentPage;
 	document.getElementById(CurrentPage).style.display = "block";
 	document.getElementById(CurrentPage).style.zIndex = "auto";
-	window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#landing"
-} 
+	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
+}
 else if (window.location.hash == "#landing") {
 	CurrentPage = 'splash';
 	HidePage();
 	PrevPage = CurrentPage;
 	document.getElementById(CurrentPage).style.display = "block";
-	document.getElementById(CurrentPage).style.zIndex = "auto";	
+	document.getElementById(CurrentPage).style.zIndex = "auto";
 }
 else if (window.location.hash == "#home") {
 	CurrentPage = 'home';
@@ -25,35 +25,35 @@ else if (window.location.hash == "#home") {
 	document.getElementById(CurrentPage).style.display = "block";
 	document.getElementById(CurrentPage).style.zIndex = "auto";
 
-} 
+}
 else if (window.location.hash == "#about") {
-	
-} 
+
+}
 else if (window.location.hash == "#watch") {
-	
-} 
+
+}
 else if (window.location.hash == "#read") {
-	
-} 
+
+}
 else if (window.location.hash == "#contact") {
-	
+
 };
 
 // Nav Buttons
 document.getElementById('landingbutton').onclick = function () {
 	CurrentPage = 'splash';
-	FadePage(); 
-	HideHeader(); 
-	window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#landing"
+	FadePage();
+	HideHeader();
+	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 }
 document.getElementById('enterbutton').onclick = function () {
 	CurrentPage = 'home';
-	FadePage(); 
+	FadePage();
 	ShowHeader();
 }
 document.getElementById('homebutton').onclick = function () {
-	CurrentPage = 'home'; 
-	FadePage(); 
+	CurrentPage = 'home';
+	FadePage();
 	ShowHeader();
 }
 document.getElementById('aboutbutton').onclick = function () {
@@ -67,6 +67,44 @@ document.getElementById('readbutton').onclick = function () {
 }
 document.getElementById('contactbutton').onclick = function () {
 	ShrinkHeader();
+}
+
+window.onhashchange = function () {
+	if (window.location.hash == "") {
+		CurrentPage = 'splash';
+		FadePage();
+		HideHeader();
+	}
+	else if (window.location.hash == "#landing") {
+		CurrentPage = 'splash';
+		FadePage();
+		HideHeader();
+	}
+	else if (window.location.hash == "#home") {
+		CurrentPage = 'home';
+		FadePage();
+		ShowHeader();
+	}
+	else if (window.location.hash == "#about") {
+		CurrentPage = 'aboutpage';
+		FadePage();
+		ShrinkHeader();
+	}
+	else if (window.location.hash == "#watch") {
+		CurrentPage = 'watchpage';
+		FadePage();
+		ShrinkHeader();
+	}
+	else if (window.location.hash == "#read") {
+		CurrentPage = 'readpage';
+		FadePage();
+		ShrinkHeader();
+	}
+	else if (window.location.hash == "#contact") {
+		CurrentPage = 'contactpage';
+		FadePage();
+		ShrinkHeader();
+	}
 }
 
 //Fade Functions
@@ -105,16 +143,16 @@ function HidePage() {
 function FadePage() {
 	setTimeout(function () {
 		console.log("Current Page: " + CurrentPage);
-		console.log("Previous Page: " + PrevPage); 
-		
+		console.log("Previous Page: " + PrevPage);
+
 		//Fade Out
 		document.getElementById(PrevPage).style.opacity = "0";
-		document.getElementById(PrevPage).style.zIndex = "-2";	
+		document.getElementById(PrevPage).style.zIndex = "-2";
 		setTimeout(function () {
 			document.getElementById(PrevPage).style.display = "none";
 			PrevPage = CurrentPage;
 		}, 500);
-		
+
 		//Fade In
 		document.getElementById(CurrentPage).style.display = "block";
 		setTimeout(function () {
