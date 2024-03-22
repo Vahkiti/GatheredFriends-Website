@@ -126,6 +126,7 @@ function About() {
 	watch = 0;
 	read = 0;
 	contact = 0;	
+	ShowHeader();
 	ShrinkHeader();
 	HidePages();
 }
@@ -137,6 +138,7 @@ function Watch() {
 	watch = 1;
 	read = 0;
 	contact = 0;	
+	ShowHeader();
 	ShrinkHeader();
 	HidePages();
 }
@@ -148,6 +150,7 @@ function Read() {
 	watch = 0;
 	read = 1;
 	contact = 0;
+	ShowHeader();
 	ShrinkHeader();
 	HidePages();
 }
@@ -159,6 +162,7 @@ function Contact() {
 	watch = 0;
 	read = 0;
 	contact = 1;
+	ShowHeader();
 	ShrinkHeader();
 	HidePages();
 }
