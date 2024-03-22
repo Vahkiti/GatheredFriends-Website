@@ -1,4 +1,9 @@
 @media screen and (max-width: 640px) {
+	header {
+        height: 12vh !important;
+        justify-content: center !important;
+    }
+	
     div.gfimg__container {
         max-width: 66.66vw !important;
         gap: .375rem !important;
@@ -26,37 +31,56 @@
 	}
 
 	div.panels img.CornerPanelR {
-		max-height: 40% !important;
+		max-height: 30% !important;
 	}
 	
-    #banner {
-        height: 12vh !important;
-        justify-content: center !important;
-    }
+	img.Geg {
+		max-height: 100%;
+		height: auto;
+		position: fixed;
+		margin-left: -50vh;
+		margin-top: -10vh;
+
+	}
 	
 	#splash {
 		margin-top: 15vh;
 	}
 
 	#navigation {
-		font-size: 40%;		
-	}	
+		font-size: 40%;
+	}
 }
 
 header {
-	display: flex;
-	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(45, 50, 112, .75);
+    align-items: center;
+    padding: 0%;
+    height: 0vh;
+	max-height: 0vh;
+	transition: 0.5s;
+	position: fixed;
+	width:100%;
+	z-index: -1;
+}
+
+header.img {
+  cursor: pointer;
+  filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 div.panels img.CornerPanelL {
-	max-height: 50%;
+	max-height: 55%;
 	height: auto;
 	z-index: -1;
 	position: fixed;
 }
 
 div.panels img.CornerPanelR {
-	max-height: 50%;
+	max-height: 40%;
 	height: auto;
 	z-index: -1;
 	position: fixed;
@@ -127,9 +151,13 @@ div.landing img.splashtext {
 }
 
 img.Geg {
-	opacity: 0.5;
-	position:absolute; top:0; left:0;
+	max-height: 75%;
+	height: auto;
 	z-index: -1000;
+	position: fixed;
+	left: 0vh;
+	top: 25vh;
+	opacity: 0.5;
 }
 
 body {
@@ -159,6 +187,7 @@ main {
     flex-direction: column;
 }
 
+header h2 a,
 main h1,
 main h2,
 main h3,
@@ -168,7 +197,6 @@ main h2 span,
 main h3 a,
 main h3 em {
     font-family: 'Orbitron';
-    letter-spacing: 0.125em;
     text-shadow: -3px 3px 0px rgb(0, 0, 0);
     text-transform: uppercase;
 }
@@ -368,45 +396,30 @@ footer br {
     right: 0;
 }
 
-#banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgba(45, 50, 112, .75);
-    align-items: center;
-    padding: 0%;
-    height: 0vh;
-	max-height: 0vh;
-	transition: 0.5s;
-	position: fixed;
-	width:100%;
-	z-index: -1;
-}
-
-#banner.img {
-  cursor: pointer;
-  filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
-}
-
 #navigation {
 	display: flex;
-	padding: 0px;
 	color: black;
-	align-items: center; 
 	text-align: center;
 	justify-content: center;
 	background-color: white;
 	text-shadow: 0px 0px 0px rgb(0, 0, 0);
 	box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
 	transition: ease-in-out all 0.5s;
-	position: fixed;
+	position: absolute;
 	width: 100%;
+	height: auto;
+	top: 100%;
+	left: 0%;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 #navigation a,
 #navigation h2 {
-	padding-right: 1vw;
-	padding-left: 1vw;
+	padding-right: 2.5vw;
+	padding-left: 2.5vw;	
+	margin-top: 0px;
+	margin-bottom: 0px;
 	color: black;
 	text-shadow: 0px 0px 0px rgb(0, 0, 0);
 }

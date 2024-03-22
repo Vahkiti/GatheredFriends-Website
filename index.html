@@ -42,36 +42,23 @@
 			</div>			
 		</div>
 		<header id="header">
-			<div id="banner">
-				<div class="gfimg__container" onclick="window.location.href=''">
-					<img class="gflogo" src="img/GF5th-IconTrans.webp">
-					<img class="gftext" src="img/GF5th-Text.webp">
-				</div>
-				<div class="bhimg__container" onclick="window.open('http://YouTube.com/Vahkiti/', '_blank');return false;">
-					<img class="bhlogo" src="img/BHLogo.webp">
-				</div>
+			<div class="gfimg__container" onclick="window.location.href=''">
+				<img class="gflogo" src="img/GF5th-IconTrans.webp">
+				<img class="gftext" src="img/GF5th-Text.webp">
+			</div>
+			<div class="bhimg__container" onclick="window.open('http://YouTube.com/Vahkiti/', '_blank');return false;">
+				<img class="bhlogo" src="img/BHLogo.webp">
 			</div>
 			<div id="navigation">
 				<span id="navtext"><h2><a href="/home">HOME</a> - <a href="/about">ABOUT</a> - <a href="/watch">WATCH</a> - <a href="/read">READ</a> - <a href="/contact">CONTACT</a></h2></span>
-			</div>
-		</header>
-		<!--<main>
-			<div id="splash">
-				<div class="landing">
-					<img class="splashlogo" src="img/GF5th-IconTrans.webp">
-					<img class="splashtext" src="img/GF5th-Text.webp">
-					<h4>Coming soon...</h4>
-					<br>
-					<video src="img/GFBG.webm"" type=" video/webm" width="100%" playsinline autoplay loop muted>
-				</div>
-			</div>
-		</main>-->		
+			</div>			
+		</header>		
 		<main>
-
 			<div id="splash">
 				<div class="landing">
 					<img class="splashlogo" src="img/GF5th-IconTrans.webp">
 					<img class="splashtext" src="img/GF5th-Text.webp">
+					<!--<h4>Coming soon...</h4>-->		
 					<br>
 					<h1><a id="enter">ENTER SITE</a></h1>
 					<hr>
@@ -89,10 +76,11 @@
 		</footer>
 		<script>
 			function entersite() {			
-				document.getElementById("banner").style.height = "16vh";
-				document.getElementById("banner").style.maxHeight = "16vh";
-				document.getElementById("banner").style.padding = "1%";				
-				document.getElementById("navigation").style.padding = "10px";
+				document.getElementById("header").style.height = "22vh";
+				document.getElementById("header").style.maxHeight = "22vh";
+				document.getElementById("header").style.padding = "1%";
+				document.getElementById("navigation").style.paddingTop = "5px";
+				document.getElementById("navigation").style.paddingBottom = "5px";
 				document.getElementById("navtext").style.fontSize = "100%";
 				document.getElementById("splash").classList.toggle('fade');
 
