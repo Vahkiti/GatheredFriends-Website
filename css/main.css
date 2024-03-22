@@ -55,9 +55,9 @@ header {
 	transition: 0.5s;
 }
 
-header img,
-#enter {
+header img {
   cursor: pointer;
+  filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 div.panels img.CornerPanelL {
@@ -407,6 +407,10 @@ footer br {
 
 #navtext {
 	font-size: 0%;
+}
+
+#enter {
+  cursor: pointer;
 }
 
 .container {
