@@ -77,7 +77,7 @@
 		<script>
 			//URL Detection
 			if (window.location.hash == "") {
-				Landing();
+				Default();
 			};
 			if (window.location.hash == "#Home") {
 				Home();
@@ -96,6 +96,18 @@
 			}
 			
 			//Fade Functions
+			function Default() {
+				document.getElementById("header").style.height = "0pc";
+				document.getElementById("header").style.maxHeight = "0px";
+				document.getElementById("header").style.padding = "0%";
+				document.getElementById("navigation").style.paddingTop = "0px";
+				document.getElementById("navigation").style.paddingBottom = "0px";
+				document.getElementById("navtext").style.fontSize = "0%";
+				document.getElementById("splash").style.display = "block";			
+				document.getElementById("splash").style.zIndex = "auto";
+				window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#Landing"
+			}
+			
 			function Home() {								
 				document.getElementById("header").style.height = "22vh";
 				document.getElementById("header").style.maxHeight = "22vh";

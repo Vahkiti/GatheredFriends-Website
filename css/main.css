@@ -434,7 +434,7 @@ footer br {
 }
 
 #splash {
-	opacity: 0;
+	opacity: 1;
 	transition: ease-in-out all 0.5s;
 }
 
