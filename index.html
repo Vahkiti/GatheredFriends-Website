@@ -76,12 +76,15 @@
 		</footer>
 		<script>
 			//URL Detection
+			if (window.location.hash == "") {
+				Landing();
+			};
 			if (window.location.hash == "#Home") {
 				Home();
 			};
 			if (window.location.hash == "#Landing") {
 				Landing();
-			};			
+			};
 			
 			// Nav Buttons 
 			document.getElementById('enter').onclick = function () {
@@ -126,7 +129,7 @@
 				setTimeout(function () {
 					document.getElementById("splash").style.zIndex = "auto";
 				}, 550);
-			}	
+			}
 		</script>
 		<script src="js/jquery/jquery-3.6.0.min.js"></script>
 		<script src="js/jquery/jquery-ui-1.13.0/jquery-ui.min.js"></script>
