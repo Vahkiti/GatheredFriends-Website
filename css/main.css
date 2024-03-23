@@ -94,14 +94,15 @@
         padding-right: 50px; !important;
     }
 	
-	#contents {
-		height: 55% !important;
-	}
 	
 	div.wip img {
-		min-width: 25vw !important;
-		max-width: 250px !important;
-		margin-bottom: -50px !important;
+		min-width: 30vw !important;
+		max-width: 300px !important;
+	}
+	
+	div.wip h2 {
+		padding-top: 50px !important;	
+		font-size: 20px !important;		
 	}
 	
 	#navigation {

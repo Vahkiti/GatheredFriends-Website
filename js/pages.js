@@ -186,7 +186,7 @@ function ShrinkHeader() {
 	document.getElementById("navigation").style.paddingBottom = "5px";
 	document.getElementById("navtext").style.fontSize = "100%";
 	document.getElementsByClassName("gftext")[0].style.marginTop = "3%";
-	document.getElementById("contents").style.height = "77%";
+	document.getElementById("contents").style.height = "80%";
 }
 
 function ResetPage() {
