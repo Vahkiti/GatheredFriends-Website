@@ -3,12 +3,14 @@ var CurrentPage;
 //URL Detection
 if (window.location.hash == "") {
 	CurrentPage = 'splash';
-	ResetPage();	
+	ResetPage();
+	document.getElementById('splash').style.display = "block";
 	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 }
 else if (window.location.hash == "#landing") {
 	CurrentPage = 'splash';
 	ResetPage();
+	document.getElementById('splash').style.display = "block";
 }
 else if (window.location.hash == "#home") {
 	CurrentPage = 'home';
@@ -45,6 +47,7 @@ window.onhashchange = function () {
 			FadeInPage();
 		}, 550);
 		document.getElementById("contents").style.overflow = "hidden";
+		document.getElementById('splash').style.display = "block";
 		window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 	}
 	else if (window.location.hash == "#home") {
@@ -98,6 +101,7 @@ document.getElementById('landingbutton').onclick = function () {
 		FadeInPage();
 	}, 550);
 	document.getElementById("contents").style.overflow = "hidden";
+	document.getElementById('splash').style.display = "block";
 	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 }
 document.getElementById('enterbutton').onclick = function () {
@@ -211,7 +215,7 @@ function ResetPage() {
 		document.getElementById('contact').style.opacity = "0";
 	}
 	
-	document.getElementById(CurrentPage).style.display = "block";
+	document.getElementById(CurrentPage).style.display = "flex";
 	document.getElementById(CurrentPage).style.opacity = "1";
 	document.getElementById(CurrentPage).style.zIndex = "auto";
 	document.getElementById('header').style.zIndex = "-1";
@@ -226,7 +230,12 @@ function FadeOutPage() {
 }
 
 function FadeInPage() {
-	document.getElementById(CurrentPage).style.display = "block";
+	if (CurrentPage != "splash") {
+		document.getElementById(CurrentPage).style.display = "flex";
+	}
+	else {
+		document.getElementById('splash').style.display = "block";
+	}
 	setTimeout(function () {
 		document.getElementById(CurrentPage).style.opacity = "1";
 		setTimeout(function () {
