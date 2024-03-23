@@ -97,6 +97,10 @@
 	#contents {
 		height: 55% !important;
 	}
+	
+	#navigation {
+		font-size: 40%;
+	}
 }
 
 header {
