@@ -40,7 +40,6 @@
 		position: fixed;
 		margin-left: -50vh;
 		margin-top: -6vh;
-
 	}
 	
 	#contents {
@@ -49,6 +48,7 @@
 	
 	#backstory {
 		padding-right: 20px !important;
+		text-align: center !important;
 	}
 	
 	#splash {
@@ -210,7 +210,6 @@ main h3 a,
 main h3 em {
     font-family: 'Orbitron';
     text-shadow: -1px 1px 0px rgb(0, 0, 0);
-	filter: drop-shadow(-1px 1px 0px rgb(0, 0, 0));
 	color: white;
 	margin: 0em;
 }
@@ -434,7 +433,6 @@ footer br {
 
 #contents {
 	display: flex;
-	text-align: left;
 	position: fixed;
 	height: 66%;
 	width: 100%;
@@ -458,9 +456,11 @@ footer br {
 }
 
 #backstory {
+	text-align: left;
 	padding-right: 40vw;
 	padding-left: 25px;
 	padding-top: 15px;
+	padding-bottom: 35px;
 	line-height: 30px;
 	text-shadow: -1px 1px 0px rgb(0, 0, 0);
 	filter: drop-shadow(-1px 1px 0px rgb(0, 0, 0));
