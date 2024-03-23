@@ -86,12 +86,8 @@
 }
 
 @media screen and (max-height: 480px) {
-	div.gfimg__container {
-        padding-left: 30px; !important;
-    }    
-	
 	div.bhimg__container {
-        padding-right: 15px; !important;
+        padding-right: 50px; !important;
     }
 	
 	#contents {
