@@ -1,9 +1,9 @@
-@media screen and (max-width: 640px) {
-    header {
+@media screen and (max-width: 720px) {
+	header {
         height: 12vh !important;
         justify-content: center !important;
     }
-
+	
     div.gfimg__container {
         max-width: 66.66vw !important;
         gap: .375rem !important;
@@ -13,7 +13,7 @@
         max-width: 0px !important;
         gap: .375rem !important;
     }
-
+	
 	div.landing {
 		font-size: 2vw;
 	}
@@ -27,20 +27,61 @@
 	}
 
 	div.panels img.CornerPanelL {
-		max-height: 40% !important;
+		max-height: 50% !important;
 	}
 
 	div.panels img.CornerPanelR {
-		max-height: 40% !important;
+		max-height: 30% !important;
 	}
 	
+	img.Geg {
+		max-height: 100%;
+		height: auto;
+		position: fixed;
+		margin-left: -50vh;
+		margin-top: -6vh;
+	}
+	
+	#contents {
+		height: 80% !important;
+	}
+	
+	#home {
+		flex-direction: column !important;
+	}
+	
+	#homeplayer {
+		align-items: center;
+		text-align: center !important;
+		float: none !important;
+		margin-left: 0px !important;
+		margin-bottom: 15px !important;
+	}
+	
+	#findus {
+		font-size: 20px !important;
+	}
+	
+	#logos {
+		justify-content: center !important;	
+	}
+
+	img.logos {
+		height: 20px !important;		
+	}
+	
+	div.wip h2 {
+		font-size: 20px !important;		
+	}
+		
 	#splash {
-		margin-top: 15vh;
+		display: none;
+		padding-top: 20vh;
 	}
 
 	#navigation {
-		font-size: 40%;		
-	}	
+		font-size: 40%;
+	}
 }
 
 header {
@@ -53,27 +94,27 @@ header {
     height: 0vh;
 	max-height: 0vh;
 	transition: 0.5s;
-}
-
-header img,
-#enter {
-  cursor: pointer;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
 }
 
 div.panels img.CornerPanelL {
-	max-height: 50%;
+	max-height: 80%;
 	height: auto;
 	z-index: -1;
-	position: absolute;
+	position: fixed;
+	filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.7));
 }
 
 div.panels img.CornerPanelR {
-	max-height: 50%;
+	max-height: 60%;
 	height: auto;
 	z-index: -1;
-	position: absolute;
+	position: fixed;
 	right: 0px;
 	bottom: 0px;
+	filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 div.gfimg__container {
@@ -84,6 +125,8 @@ div.gfimg__container {
     height: 100%;
     width: 100%;
     max-width: 33.33vw;
+	cursor: pointer;
+	filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 div.gfimg__container img {
@@ -113,6 +156,8 @@ div.bhimg__container {
 div.bhimg__container img {
     max-height: 100%;
     max-width: 50%;
+	cursor: pointer;
+	filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 div.bhimg__container img.bhlogo {
@@ -136,6 +181,49 @@ div.landing img.splashlogo {
 div.landing img.splashtext {
 	min-width: 25vw;
 	max-width: 250px;
+}
+
+div.landing h1,
+div.landing h2,
+span.bodytext h1,
+span.bodytext h2,
+span.bodytext h3,
+span.bodytext h4 {
+	text-shadow: -3px 3px 0px rgb(0, 0, 0);
+	filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
+span.bodytext b {
+	text-shadow: -2px 2px 0px rgb(0, 0, 0);
+	filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
+div.wip {
+	display: flex;
+	flex-direction: column;
+	object-fit: contain;
+	align-items: center;
+	text-align: center;
+	text-shadow: -2px 2px 0px rgb(0, 0, 0);
+	filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
+div.wip img {	
+	min-width: 35vw;
+	max-width: 350px;
+	padding-top: 25px;
+	padding-left: 25px;
+	margin-bottom: -100px;
+}
+
+img.Geg {
+	max-height: 75%;
+	height: auto;
+	z-index: -1000;
+	position: fixed;
+	left: 0vh;
+	top: 25vh;
+	opacity: 0.5;
 }
 
 body {
@@ -163,8 +251,10 @@ main {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
+	font-size: 20px;
 }
 
+header h2 a,
 main h1,
 main h2,
 main h3,
@@ -174,40 +264,8 @@ main h2 span,
 main h3 a,
 main h3 em {
     font-family: 'Orbitron';
-    letter-spacing: 0.125em;
-    text-shadow: -3px 3px 0px rgb(0, 0, 0);
-    text-transform: uppercase;
-}
-
-main h3 {
-    text-shadow: -2px 2px 0px rgb(0, 0, 0);
-}
-
-main h1,
-main h2,
-main h4 {
-    margin: 0em;
-    text-align: center;
-}
-
-main h1.title {
-    font-size: 3em;
-}
-
-main h1.separate {
-    margin-top: 0.5em;
-}
-
-main table {
-    margin-top: 1em;
-}
-
-main section {
-    margin: 1.5em 0em;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 1em;
+	color: white;
+	margin: 0em;
 }
 
 hr {
@@ -217,14 +275,6 @@ hr {
     max-width: 500px;
     border: 1px solid white;
     box-shadow: -2.5px 2.5px 0px rgb(0, 0, 0);
-}
-
-div h3 {
-    margin: 0em;
-}
-
-div p {
-    margin: 0.375em 0em;
 }
 
 div.center {
@@ -324,7 +374,7 @@ footer {
 }
 
 footer a {
-    color: black;
+    color: dimgray;
 }
 
 footer a:hover {
@@ -339,8 +389,12 @@ footer br {
 	display: none;
 }
 
-#scrollfix {
-	overflow: hidden;
+#preheader {
+	display: flex;
+}
+
+#overlays {
+	display: flex;
 }
 
 #bh-logo,
@@ -366,35 +420,30 @@ footer br {
     right: 0;
 }
 
-#splash {
-	opacity: 1;
-	transition: ease-in-out all 0.5s;
-}
-
-#splash.fade {
-	opacity: 0;
-	z-index: -2;
-}
-
 #navigation {
 	display: flex;
-	padding: 0px;
 	color: black;
-	align-items: center; 
 	text-align: center;
 	justify-content: center;
 	background-color: white;
-	text-shadow: 0px 0px 0px rgb(0, 0, 0);
 	box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
 	transition: ease-in-out all 0.5s;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 100%;
+	left: 0%;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 #navigation a,
 #navigation h2 {
-	padding-right: 1vw;
-	padding-left: 1vw;
+	padding-right: 2.5vw;
+	padding-left: 2.5vw;	
+	margin-top: 0px;
+	margin-bottom: 0px;
 	color: black;
-	text-shadow: 0px 0px 0px rgb(0, 0, 0);
 }
 
 #navigation a:hover {
@@ -409,15 +458,115 @@ footer br {
 	font-size: 0%;
 }
 
-.container {
+#contents {
+	display: flex;
+	position: fixed;
+	height: 66%;
+	width: 100%;
+	bottom: 3vh;
+	transition: ease-in-out all 0.5s;
+	z-index: -1;
+	overflow: hidden;
+}
+
+#splash {
+	display: none;
+	opacity: 0;
+	transition: ease-in-out all 0.5s;
+	margin: 0em;
+}
+
+#home {
+    display: flex;
+	width: 100%;
+	text-align: left;
+    flex-direction: row;
+	display: none;
+	opacity: 0;
+	transition: ease-in-out all 0.5s;
+}
+
+#backstory {
+	padding: 30px;
+	line-height: 30px;
+	text-align: justify;
+}
+
+#homeplayer {
+	float: right;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
+}
+
+#findus {
+	font-family: 'Orbitron';
+	font-size: 30px;
+	color: white;
+	margin: 0em;
+}
+
+#logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+img.logos {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	height: 30px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#about {
+	display: none;
+	opacity: 0;
+	object-fit: contain;
+    justify-content: center;
+	width: 100vw;
+	transition: ease-in-out all 0.5s;
+}
+
+#watch {
+	display: none;
+	opacity: 0;
+	object-fit: contain;
+    justify-content: center;
+	width: 100vw;
+	transition: ease-in-out all 0.5s;
+}
+
+#read {
+	display: none;
+	opacity: 0;
+	object-fit: contain;
+    justify-content: center;
+	width: 100vw;
+	transition: ease-in-out all 0.5s;
+}
+
+#contact {
+	display: none;
+	opacity: 0;
+	object-fit: contain;
+    justify-content: center;
+	width: 100vw;
+	transition: ease-in-out all 0.5s;
+}
+
+div.container {
     position: relative;
     width: 100%;
     overflow: hidden;
     padding-top: 56.25%;
-    /* 16:9 Aspect Ratio */
 }
 
-.responsive-iframe {
+iframe.responsive-iframe {
     padding-top: 7%;
     padding-left: 10%;
     padding-right: 10%;
@@ -430,4 +579,16 @@ footer br {
     width: 75%;
     height: 75%;
     border: none;
+}
+
+iframe.spotiframe {
+	border-radius: 12px;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	max-width: 100%;
+    width: 496px;
+    height: 279px;
 }
