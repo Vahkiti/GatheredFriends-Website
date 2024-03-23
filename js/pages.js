@@ -24,22 +24,47 @@ else if (window.location.hash == "#home") {
 	PrevPage = CurrentPage;
 	document.getElementById(CurrentPage).style.display = "block";
 	document.getElementById(CurrentPage).style.zIndex = "auto";
-
 }
 else if (window.location.hash == "#about") {
-
+	CurrentPage = 'about';
+	HidePage();
+	ShrinkHeader();
+	PrevPage = CurrentPage;
+	document.getElementById(CurrentPage).style.display = "block";
+	document.getElementById(CurrentPage).style.zIndex = "auto";
 }
 else if (window.location.hash == "#watch") {
-
+	CurrentPage = 'watch';
+	HidePage();
+	ShrinkHeader();
+	PrevPage = CurrentPage;
+	document.getElementById(CurrentPage).style.display = "block";
+	document.getElementById(CurrentPage).style.zIndex = "auto";
 }
 else if (window.location.hash == "#read") {
-
+	CurrentPage = 'read';
+	HidePage();
+	ShrinkHeader();
+	PrevPage = CurrentPage;
+	document.getElementById(CurrentPage).style.display = "block";
+	document.getElementById(CurrentPage).style.zIndex = "auto";
 }
 else if (window.location.hash == "#contact") {
+	CurrentPage = 'contact';
+	HidePage();
+	ShrinkHeader();
+	PrevPage = CurrentPage;
+	document.getElementById(CurrentPage).style.display = "block";
+	document.getElementById(CurrentPage).style.zIndex = "auto";
+}
 
-};
+console.log("Current Page: " + CurrentPage);
+console.log("Previous Page: " + PrevPage);
 
 window.onhashchange = function () {
+	console.log("Current Page: " + CurrentPage);
+	console.log("Previous Page: " + PrevPage);	
+
 	if (window.location.hash == "") {
 		CurrentPage = 'splash';
 		FadePage();
@@ -57,22 +82,22 @@ window.onhashchange = function () {
 		ShowHeader();
 	}
 	else if (window.location.hash == "#about") {
-		CurrentPage = 'aboutpage';
+		CurrentPage = 'about';
 		FadePage();
 		ShrinkHeader();
 	}
 	else if (window.location.hash == "#watch") {
-		CurrentPage = 'watchpage';
+		CurrentPage = 'watch';
 		FadePage();
 		ShrinkHeader();
 	}
 	else if (window.location.hash == "#read") {
-		CurrentPage = 'readpage';
+		CurrentPage = 'read';
 		FadePage();
 		ShrinkHeader();
 	}
 	else if (window.location.hash == "#contact") {
-		CurrentPage = 'contactpage';
+		CurrentPage = 'contact';
 		FadePage();
 		ShrinkHeader();
 	}
@@ -136,17 +161,14 @@ function ShrinkHeader() {
 function HidePage() {
 	document.getElementById('splash').style.display = "none";
 	document.getElementById('home').style.display = "none";
-	//document.getElementById('aboutpage').style.display = "none";
-	//document.getElementById('watchpage').style.display = "none";
-	//document.getElementById('readpage').style.display = "none";
-	//document.getElementById('contactpage').style.display = "none";
+	document.getElementById('about').style.display = "none";
+	document.getElementById('watch').style.display = "none";
+	document.getElementById('read').style.display = "none";
+	document.getElementById('contact').style.display = "none";
 }
 
 function FadePage() {
 	setTimeout(function () {
-		console.log("Current Page: " + CurrentPage);
-		console.log("Previous Page: " + PrevPage);
-
 		//Fade Out
 		document.getElementById(PrevPage).style.opacity = "0";
 		document.getElementById(PrevPage).style.zIndex = "-2";
