@@ -99,7 +99,6 @@
 	}
 	
 	div.wip img {
-		display: flex;
 		min-width: 25vw !important;
 		max-width: 250px !important;
 		margin-bottom: -50px !important;
