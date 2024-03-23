@@ -13,7 +13,7 @@
         max-width: 0px !important;
         gap: .375rem !important;
     }
-
+	
 	div.landing {
 		font-size: 2vw;
 	}
@@ -43,6 +43,10 @@
 
 	}
 	
+	#contents {
+		height: 80% !important;
+	}
+	
 	#splash {
 		display: none;
 		margin-top: 15vh;
@@ -64,7 +68,7 @@ header {
 	max-height: 0vh;
 	transition: 0.5s;
 	position: fixed;
-	width:100%;
+	width: 100%;
 	z-index: -1;
 }
 
@@ -201,6 +205,7 @@ main h3 em {
     font-family: 'Orbitron';
     text-shadow: -3px 3px 0px rgb(0, 0, 0);
     text-transform: uppercase;
+	color: white;
 }
 
 main h3 {
@@ -432,6 +437,19 @@ footer br {
 
 #navtext {
 	font-size: 0%;
+}
+
+#contents {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	position: fixed;
+	height: 66%;
+	width: 100%;
+	bottom: 3vh;
+	transition: ease-in-out all 0.5s;
+	z-index: -100;
+	overflow: hidden;
 }
 
 #splash {

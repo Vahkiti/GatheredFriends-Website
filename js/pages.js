@@ -44,6 +44,7 @@ window.onhashchange = function () {
 		setTimeout(function () {		
 			FadeInPage();
 		}, 550);
+		document.getElementById("contents").style.overflow = "hidden";
 		window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 	}
 	else if (window.location.hash == "#home") {
@@ -96,6 +97,7 @@ document.getElementById('landingbutton').onclick = function () {
 	setTimeout(function () {		
 		FadeInPage();
 	}, 550);
+	document.getElementById("contents").style.overflow = "hidden";
 	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 }
 document.getElementById('enterbutton').onclick = function () {
@@ -155,6 +157,7 @@ function HideHeader() {
 	document.getElementById("navigation").style.paddingTop = "0px";
 	document.getElementById("navigation").style.paddingBottom = "0px";
 	document.getElementById("navtext").style.fontSize = "0%";
+	document.getElementById("contents").style.zIndex = "-100";
 }
 
 function ShowHeader() {
@@ -164,6 +167,9 @@ function ShowHeader() {
 	document.getElementById("navigation").style.paddingTop = "5px";
 	document.getElementById("navigation").style.paddingBottom = "5px";
 	document.getElementById("navtext").style.fontSize = "100%";
+	document.getElementById("contents").style.height = "66%";
+	document.getElementById("contents").style.zIndex = "auto";
+	document.getElementById("contents").style.overflow = "scroll";
 }
 
 function ShrinkHeader() {
@@ -174,41 +180,39 @@ function ShrinkHeader() {
 	document.getElementById("navigation").style.paddingBottom = "5px";
 	document.getElementById("navtext").style.fontSize = "100%";
 	document.getElementsByClassName("gftext")[0].style.marginTop = "3%";
+	document.getElementById("contents").style.height = "78%";
 }
 
 function ResetPage() {
-	//setTimeout(function () {
-		if (CurrentPage != "splash") {
-			document.getElementById('splash').style.display = "none";
-			document.getElementById('splash').style.opacity = "0";
-		}
-		if (CurrentPage != "home") {
-			document.getElementById('home').style.display = "none";
-			document.getElementById('home').style.opacity = "0";
-		}
-		if (CurrentPage != "about") {
-			document.getElementById('about').style.display = "none";
-			document.getElementById('about').style.opacity = "0";
-		}
-		if (CurrentPage != "watch") {
-			document.getElementById('watch').style.display = "none";
-			document.getElementById('watch').style.opacity = "0";
-		}
-		if (CurrentPage != "read") {
-			document.getElementById('read').style.display = "none";
-			document.getElementById('read').style.opacity = "0";
-		}
-		if (CurrentPage != "contact") {
-			document.getElementById('contact').style.display = "none";
-			document.getElementById('contact').style.opacity = "0";
-		}
-	//}, 500);
+	if (CurrentPage != "splash") {
+		document.getElementById('splash').style.display = "none";
+		document.getElementById('splash').style.opacity = "0";
+	}
+	if (CurrentPage != "home") {
+		document.getElementById('home').style.display = "none";
+		document.getElementById('home').style.opacity = "0";
+	}
+	if (CurrentPage != "about") {
+		document.getElementById('about').style.display = "none";
+		document.getElementById('about').style.opacity = "0";
+	}
+	if (CurrentPage != "watch") {
+		document.getElementById('watch').style.display = "none";
+		document.getElementById('watch').style.opacity = "0";
+	}
+	if (CurrentPage != "read") {
+		document.getElementById('read').style.display = "none";
+		document.getElementById('read').style.opacity = "0";
+	}
+	if (CurrentPage != "contact") {
+		document.getElementById('contact').style.display = "none";
+		document.getElementById('contact').style.opacity = "0";
+	}
 	
 	document.getElementById(CurrentPage).style.display = "block";
 	document.getElementById(CurrentPage).style.opacity = "1";
 	document.getElementById(CurrentPage).style.zIndex = "auto";
-	
-	console.log("Current Page: " + CurrentPage);
+	document.getElementById('header').style.zIndex = "-1";
 }
 
 function FadeOutPage() {
@@ -225,8 +229,7 @@ function FadeInPage() {
 		document.getElementById(CurrentPage).style.opacity = "1";
 		setTimeout(function () {
 			document.getElementById(CurrentPage).style.zIndex = "auto";
-		}, 500);
+			document.getElementById('header').style.zIndex = "-1";
+		}, 550);
 	}, 10);	
 }
-
-console.log("Current Page: " + CurrentPage);
