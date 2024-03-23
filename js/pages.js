@@ -157,7 +157,9 @@ function HideHeader() {
 	document.getElementById("navigation").style.paddingTop = "0px";
 	document.getElementById("navigation").style.paddingBottom = "0px";
 	document.getElementById("navtext").style.fontSize = "0%";
-	document.getElementById("contents").style.zIndex = "-100";
+	setTimeout(function () {
+		document.getElementById("contents").style.zIndex = "-100";
+	}, 500);	
 }
 
 function ShowHeader() {

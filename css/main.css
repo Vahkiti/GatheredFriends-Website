@@ -47,6 +47,10 @@
 		height: 80% !important;
 	}
 	
+	#backstory {
+		padding-right: 20px !important;
+	}
+	
 	#splash {
 		display: none;
 		margin-top: 15vh;
@@ -191,6 +195,8 @@ main {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
+	font-size: 20px;
+	text-shadow: -1px 1px 0px rgb(0, 0, 0);
 }
 
 header h2 a,
@@ -203,20 +209,15 @@ main h2 span,
 main h3 a,
 main h3 em {
     font-family: 'Orbitron';
-    text-shadow: -3px 3px 0px rgb(0, 0, 0);
-    text-transform: uppercase;
+    text-shadow: -1px 1px 0px rgb(0, 0, 0);
+	filter: drop-shadow(-1px 1px 0px rgb(0, 0, 0));
 	color: white;
-}
-
-main h3 {
-    text-shadow: -2px 2px 0px rgb(0, 0, 0);
+	margin: 0em;
 }
 
 main h1,
-main h2,
-main h4 {
+main h2 {
     margin: 0em;
-    text-align: center;
 }
 
 main h1.title {
@@ -246,14 +247,6 @@ hr {
     max-width: 500px;
     border: 1px solid white;
     box-shadow: -2.5px 2.5px 0px rgb(0, 0, 0);
-}
-
-div h3 {
-    margin: 0em;
-}
-
-div p {
-    margin: 0.375em 0em;
 }
 
 div.center {
@@ -441,14 +434,13 @@ footer br {
 
 #contents {
 	display: flex;
-	text-align: center;
-	justify-content: center;
+	text-align: left;
 	position: fixed;
 	height: 66%;
 	width: 100%;
 	bottom: 3vh;
 	transition: ease-in-out all 0.5s;
-	z-index: -100;
+	z-index: -1;
 	overflow: hidden;
 }
 
@@ -456,12 +448,22 @@ footer br {
 	display: none;
 	opacity: 0;
 	transition: ease-in-out all 0.5s;
+	margin: 0em;
 }
 
 #home {
 	display: none;
 	opacity: 0;
 	transition: ease-in-out all 0.5s;
+}
+
+#backstory {
+	padding-right: 40vw;
+	padding-left: 25px;
+	padding-top: 15px;
+	line-height: 30px;
+	text-shadow: -1px 1px 0px rgb(0, 0, 0);
+	filter: drop-shadow(-1px 1px 0px rgb(0, 0, 0));
 }
 
 #about {
