@@ -209,7 +209,7 @@ main h2 span,
 main h3 a,
 main h3 em {
     font-family: 'Orbitron';
-    text-shadow: -1px 1px 0px rgb(0, 0, 0);
+    text-shadow: -3px 3px 0px rgb(0, 0, 0);
 	color: white;
 	margin: 0em;
 }
@@ -464,6 +464,11 @@ footer br {
 	line-height: 30px;
 	text-shadow: -1px 1px 0px rgb(0, 0, 0);
 	filter: drop-shadow(-1px 1px 0px rgb(0, 0, 0));
+}
+
+#backstory h2,
+#backstory h3 {
+	text-shadow: -2px 2px 0px rgb(0, 0, 0);
 }
 
 #about {
