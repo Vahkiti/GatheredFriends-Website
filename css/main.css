@@ -406,6 +406,7 @@ footer br {
 #bh-logo,
 #mod-logo {
     position: fixed;
+	z-index: 100;
 }
 
 #bh-logo:hover,
