@@ -52,6 +52,7 @@
 	
 	#homeplayer {
 		align-items: center;
+		text-align: center !important;
 		float: none !important;
 		margin-left: 0px !important;
 		margin-bottom: 15px !important;
