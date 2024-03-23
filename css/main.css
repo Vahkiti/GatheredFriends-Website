@@ -84,6 +84,12 @@
 	}
 }
 
+@media screen and (max-height: 480px) {
+	#contents {
+		height: 55% !important;
+	}
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -461,7 +467,6 @@ footer br {
 #contents {
 	display: flex;
 	position: fixed;
-	height: 66%;
 	width: 100%;
 	bottom: 3vh;
 	transition: ease-in-out all 0.5s;

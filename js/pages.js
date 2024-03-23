@@ -173,7 +173,7 @@ function ShowHeader() {
 	document.getElementById("navigation").style.paddingTop = "5px";
 	document.getElementById("navigation").style.paddingBottom = "5px";
 	document.getElementById("navtext").style.fontSize = "100%";
-	document.getElementById("contents").style.height = "66%";
+	document.getElementById("contents").style.height = "65%";
 	document.getElementById("contents").style.zIndex = "auto";
 	document.getElementById("contents").style.overflow = "scroll";
 }
@@ -186,7 +186,7 @@ function ShrinkHeader() {
 	document.getElementById("navigation").style.paddingBottom = "5px";
 	document.getElementById("navtext").style.fontSize = "100%";
 	document.getElementsByClassName("gftext")[0].style.marginTop = "3%";
-	document.getElementById("contents").style.height = "78%";
+	document.getElementById("contents").style.height = "77%";
 }
 
 function ResetPage() {
