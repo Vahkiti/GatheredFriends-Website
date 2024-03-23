@@ -1,4 +1,4 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
 	header {
         height: 12vh !important;
         justify-content: center !important;
@@ -46,12 +46,12 @@
 		height: 80% !important;
 	}
 	
-	#home {	
-		text-align: center !important;
+	#home {
 		flex-direction: column !important;
 	}
 	
 	#homeplayer {
+		align-items: center;
 		float: none !important;
 		margin-left: 0px !important;
 		margin-bottom: 15px !important;
@@ -480,7 +480,8 @@ footer br {
 
 #homeplayer {
 	float: right;
-	margin-left: 100px;
+	margin-left: 50px;
+	margin-bottom: 20px;
 }
 
 #about {
