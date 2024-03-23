@@ -95,11 +95,14 @@ window.onhashchange = function () {
 // Nav Buttons
 document.getElementById('landingbutton').onclick = function () {
 	FadeOutPage();
-	setTimeout(function () {
-		CurrentPage = 'home';
+	HideHeader();
+	CurrentPage = 'splash';
+	setTimeout(function () {		
 		FadeInPage();
-		ShowHeader();
 	}, 550);
+	document.getElementById("contents").style.overflow = "hidden";
+	document.getElementById('splash').style.display = "block";
+	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 }
 document.getElementById('enterbutton').onclick = function () {
 	FadeOutPage();
@@ -215,7 +218,7 @@ function ResetPage() {
 	document.getElementById(CurrentPage).style.display = "flex";
 	document.getElementById(CurrentPage).style.opacity = "1";
 	document.getElementById(CurrentPage).style.zIndex = "auto";
-	document.getElementById('header').style.zIndex = "-1";
+	document.getElementById('header').style.zIndex = "20";
 }
 
 function FadeOutPage() {
@@ -237,7 +240,7 @@ function FadeInPage() {
 		document.getElementById(CurrentPage).style.opacity = "1";
 		setTimeout(function () {
 			document.getElementById(CurrentPage).style.zIndex = "auto";
-			document.getElementById('header').style.zIndex = "-1";
+			document.getElementById('header').style.zIndex = "20";
 		}, 550);
 	}, 10);	
 }
