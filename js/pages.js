@@ -95,14 +95,11 @@ window.onhashchange = function () {
 // Nav Buttons
 document.getElementById('landingbutton').onclick = function () {
 	FadeOutPage();
-	HideHeader();
-	CurrentPage = 'splash';
-	setTimeout(function () {		
+	setTimeout(function () {
+		CurrentPage = 'home';
 		FadeInPage();
+		ShowHeader();
 	}, 550);
-	document.getElementById("contents").style.overflow = "hidden";
-	document.getElementById('splash').style.display = "block";
-	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 }
 document.getElementById('enterbutton').onclick = function () {
 	FadeOutPage();
