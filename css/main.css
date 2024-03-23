@@ -69,6 +69,10 @@
 	img.logos {
 		height: 20px !important;		
 	}
+	
+	div.wip h2 {
+		font-size: 20px !important;		
+	}
 		
 	#splash {
 		display: none;
@@ -192,6 +196,24 @@ span.bodytext h4 {
 span.bodytext b {
 	text-shadow: -2px 2px 0px rgb(0, 0, 0);
 	filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
+div.wip {
+	display: flex;
+	flex-direction: column;
+	object-fit: contain;
+	align-items: center;
+	text-align: center;
+	text-shadow: -2px 2px 0px rgb(0, 0, 0);
+	filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
+div.wip img {	
+	min-width: 35vw;
+	max-width: 350px;
+	padding-top: 25px;
+	padding-left: 25px;
+	margin-bottom: -100px;
 }
 
 img.Geg {
@@ -504,24 +526,36 @@ img.logos {
 #about {
 	display: none;
 	opacity: 0;
+	object-fit: contain;
+    justify-content: center;
+	width: 100vw;
 	transition: ease-in-out all 0.5s;
 }
 
 #watch {
 	display: none;
 	opacity: 0;
+	object-fit: contain;
+    justify-content: center;
+	width: 100vw;
 	transition: ease-in-out all 0.5s;
 }
 
 #read {
 	display: none;
 	opacity: 0;
+	object-fit: contain;
+    justify-content: center;
+	width: 100vw;
 	transition: ease-in-out all 0.5s;
 }
 
 #contact {
 	display: none;
 	opacity: 0;
+	object-fit: contain;
+    justify-content: center;
+	width: 100vw;
 	transition: ease-in-out all 0.5s;
 }
 
