@@ -435,32 +435,38 @@ footer br {
 }
 
 #splash {
-	opacity: 1;
+	display: none;
+	opacity: 0;
 	transition: ease-in-out all 0.5s;
 }
 
 #home {
-	opacity: 1;
+	display: none;
+	opacity: 0;
 	transition: ease-in-out all 0.5s;
 }
 
 #about {
-	opacity: 1;
+	display: none;
+	opacity: 0;
 	transition: ease-in-out all 0.5s;
 }
 
 #watch {
-	opacity: 1;
+	display: none;
+	opacity: 0;
 	transition: ease-in-out all 0.5s;
 }
 
 #read {
-	opacity: 1;
+	display: none;
+	opacity: 0;
 	transition: ease-in-out all 0.5s;
 }
 
 #contact {
-	opacity: 1;
+	display: none;
+	opacity: 0;
 	transition: ease-in-out all 0.5s;
 }
 

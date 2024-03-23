@@ -1,136 +1,150 @@
 var CurrentPage;
-var PrevPage;
 
 //URL Detection
 if (window.location.hash == "") {
 	CurrentPage = 'splash';
-	HidePage();
-	PrevPage = CurrentPage;
-	document.getElementById(CurrentPage).style.display = "block";
-	document.getElementById(CurrentPage).style.zIndex = "auto";
+	ResetPage();	
 	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 }
 else if (window.location.hash == "#landing") {
 	CurrentPage = 'splash';
-	HidePage();
-	PrevPage = CurrentPage;
-	document.getElementById(CurrentPage).style.display = "block";
-	document.getElementById(CurrentPage).style.zIndex = "auto";
+	ResetPage();
 }
 else if (window.location.hash == "#home") {
 	CurrentPage = 'home';
-	HidePage();
+	ResetPage();
 	ShowHeader();
-	PrevPage = CurrentPage;
-	document.getElementById(CurrentPage).style.display = "block";
-	document.getElementById(CurrentPage).style.zIndex = "auto";
 }
 else if (window.location.hash == "#about") {
 	CurrentPage = 'about';
-	HidePage();
+	ResetPage();
 	ShrinkHeader();
-	PrevPage = CurrentPage;
-	document.getElementById(CurrentPage).style.display = "block";
-	document.getElementById(CurrentPage).style.zIndex = "auto";
 }
 else if (window.location.hash == "#watch") {
 	CurrentPage = 'watch';
-	HidePage();
+	ResetPage();
 	ShrinkHeader();
-	PrevPage = CurrentPage;
-	document.getElementById(CurrentPage).style.display = "block";
-	document.getElementById(CurrentPage).style.zIndex = "auto";
 }
 else if (window.location.hash == "#read") {
 	CurrentPage = 'read';
-	HidePage();
+	ResetPage();
 	ShrinkHeader();
-	PrevPage = CurrentPage;
-	document.getElementById(CurrentPage).style.display = "block";
-	document.getElementById(CurrentPage).style.zIndex = "auto";
 }
 else if (window.location.hash == "#contact") {
 	CurrentPage = 'contact';
-	HidePage();
+	ResetPage();
 	ShrinkHeader();
-	PrevPage = CurrentPage;
-	document.getElementById(CurrentPage).style.display = "block";
-	document.getElementById(CurrentPage).style.zIndex = "auto";
 }
 
-console.log("Current Page: " + CurrentPage);
-console.log("Previous Page: " + PrevPage);
-
 window.onhashchange = function () {
-	console.log("Current Page: " + CurrentPage);
-	console.log("Previous Page: " + PrevPage);	
-
-	if (window.location.hash == "") {
-		CurrentPage = 'splash';
-		FadePage();
+	if (window.location.hash == "#landing") {
+		FadeOutPage();
 		HideHeader();
+		CurrentPage = 'splash';
+		setTimeout(function () {		
+			FadeInPage();
+		}, 550);
 		window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 	}
-	else if (window.location.hash == "#landing") {
-		CurrentPage = 'splash';
-		FadePage();
-		HideHeader();
-	}
 	else if (window.location.hash == "#home") {
-		CurrentPage = 'home';
-		FadePage();
-		ShowHeader();
+	FadeOutPage();
+		setTimeout(function () {
+			CurrentPage = 'home';
+			FadeInPage();
+			ShowHeader();
+		}, 550);	
 	}
 	else if (window.location.hash == "#about") {
-		CurrentPage = 'about';
-		FadePage();
-		ShrinkHeader();
+		FadeOutPage();
+		setTimeout(function () {
+			CurrentPage = 'about';
+			FadeInPage();
+			ShrinkHeader();
+		}, 550);	
 	}
 	else if (window.location.hash == "#watch") {
-		CurrentPage = 'watch';
-		FadePage();
-		ShrinkHeader();
+		FadeOutPage();
+		setTimeout(function () {
+			CurrentPage = 'watch';
+			FadeInPage();
+			ShrinkHeader();
+		}, 550);	
 	}
 	else if (window.location.hash == "#read") {
-		CurrentPage = 'read';
-		FadePage();
-		ShrinkHeader();
+		FadeOutPage();
+		setTimeout(function () {
+			CurrentPage = 'read';
+			FadeInPage();
+			ShrinkHeader();
+		}, 550);	
 	}
 	else if (window.location.hash == "#contact") {
-		CurrentPage = 'contact';
-		FadePage();
-		ShrinkHeader();
+		FadeOutPage();
+		setTimeout(function () {
+			CurrentPage = 'contact';
+			FadeInPage();
+			ShrinkHeader();
+		}, 550);	
 	}
 }
 
 // Nav Buttons
 document.getElementById('landingbutton').onclick = function () {
-	CurrentPage = 'splash';
-	FadePage();
+	FadeOutPage();
 	HideHeader();
+	CurrentPage = 'splash';
+	setTimeout(function () {		
+		FadeInPage();
+	}, 550);
 	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 }
 document.getElementById('enterbutton').onclick = function () {
-	CurrentPage = 'home';
-	FadePage();
-	ShowHeader();
+	FadeOutPage();
+	setTimeout(function () {
+		CurrentPage = 'home';
+		FadeInPage();
+		ShowHeader();
+	}, 550);	
 }
 document.getElementById('homebutton').onclick = function () {
-	CurrentPage = 'home';
-	FadePage();
-	ShowHeader();
+	FadeOutPage();
+	setTimeout(function () {	
+		CurrentPage = 'home';
+		FadeInPage();
+		ShowHeader();
+	}, 550);	
 }
 document.getElementById('aboutbutton').onclick = function () {
-	ShrinkHeader();
+	FadeOutPage();
+	setTimeout(function () {
+		CurrentPage = 'about';
+		FadeInPage();
+		ShrinkHeader();
+	}, 550);	
 }
 document.getElementById('watchbutton').onclick = function () {
-	ShrinkHeader();
+	FadeOutPage();
+	setTimeout(function () {
+		CurrentPage = 'watch';
+		FadeInPage();
+		ShrinkHeader();
+	}, 550);	
 }
 document.getElementById('readbutton').onclick = function () {
-	ShrinkHeader();
+	FadeOutPage();
+	setTimeout(function () {
+		CurrentPage = 'read';
+		FadeInPage();
+		ShrinkHeader();
+	}, 550);	
 }
 document.getElementById('contactbutton').onclick = function () {
-	ShrinkHeader();
+	FadeOutPage();
+	setTimeout(function () {
+		CurrentPage = 'contact';
+		FadeInPage();
+		ShrinkHeader();
+	}, 550);	
 }
 
 //Fade Functions
@@ -155,36 +169,64 @@ function ShowHeader() {
 function ShrinkHeader() {
 	document.getElementById("header").style.height = "10vh";
 	document.getElementById("header").style.maxHeight = "10vh";
+	document.getElementById("header").style.padding = "1%";
+	document.getElementById("navigation").style.paddingTop = "5px";
+	document.getElementById("navigation").style.paddingBottom = "5px";
+	document.getElementById("navtext").style.fontSize = "100%";
 	document.getElementsByClassName("gftext")[0].style.marginTop = "3%";
 }
 
-function HidePage() {
-	document.getElementById('splash').style.display = "none";
-	document.getElementById('home').style.display = "none";
-	document.getElementById('about').style.display = "none";
-	document.getElementById('watch').style.display = "none";
-	document.getElementById('read').style.display = "none";
-	document.getElementById('contact').style.display = "none";
+function ResetPage() {
+	//setTimeout(function () {
+		if (CurrentPage != "splash") {
+			document.getElementById('splash').style.display = "none";
+			document.getElementById('splash').style.opacity = "0";
+		}
+		if (CurrentPage != "home") {
+			document.getElementById('home').style.display = "none";
+			document.getElementById('home').style.opacity = "0";
+		}
+		if (CurrentPage != "about") {
+			document.getElementById('about').style.display = "none";
+			document.getElementById('about').style.opacity = "0";
+		}
+		if (CurrentPage != "watch") {
+			document.getElementById('watch').style.display = "none";
+			document.getElementById('watch').style.opacity = "0";
+		}
+		if (CurrentPage != "read") {
+			document.getElementById('read').style.display = "none";
+			document.getElementById('read').style.opacity = "0";
+		}
+		if (CurrentPage != "contact") {
+			document.getElementById('contact').style.display = "none";
+			document.getElementById('contact').style.opacity = "0";
+		}
+	//}, 500);
+	
+	document.getElementById(CurrentPage).style.display = "block";
+	document.getElementById(CurrentPage).style.opacity = "1";
+	document.getElementById(CurrentPage).style.zIndex = "auto";
+	
+	console.log("Current Page: " + CurrentPage);
 }
 
-function FadePage() {
+function FadeOutPage() {
+	document.getElementById(CurrentPage).style.opacity = "0";
+	document.getElementById(CurrentPage).style.zIndex = "-2";
 	setTimeout(function () {
-		//Fade Out
-		document.getElementById(PrevPage).style.opacity = "0";
-		document.getElementById(PrevPage).style.zIndex = "-2";
-		setTimeout(function () {
-			document.getElementById(PrevPage).style.display = "none";
-			PrevPage = CurrentPage;
-		}, 500);
+		document.getElementById(CurrentPage).style.display = "none";
+	}, 500);
+}
 
-		//Fade In
-		document.getElementById(CurrentPage).style.display = "block";
-		setTimeout(function () {
-			document.getElementById(CurrentPage).style.opacity = "1";
-			document.getElementById(CurrentPage).style.zIndex = "-2";
-		}, 1);
+function FadeInPage() {
+	document.getElementById(CurrentPage).style.display = "block";
+	setTimeout(function () {
+		document.getElementById(CurrentPage).style.opacity = "1";
 		setTimeout(function () {
 			document.getElementById(CurrentPage).style.zIndex = "auto";
-		}, 550);
-	}, 10);
+		}, 500);
+	}, 10);	
 }
+
+console.log("Current Page: " + CurrentPage);
