@@ -58,6 +58,18 @@
 		margin-bottom: 15px !important;
 	}
 	
+	#findus {
+		font-size: 20px !important;
+	}
+	
+	#logos {
+		justify-content: center !important;	
+	}
+
+	img.logos {
+		height: 20px !important;		
+	}
+		
 	#splash {
 		display: none;
 		padding-top: 20vh;
@@ -167,6 +179,21 @@ div.landing img.splashtext {
 	max-width: 250px;
 }
 
+div.landing h1,
+div.landing h2,
+span.bodytext h1,
+span.bodytext h2,
+span.bodytext h3,
+span.bodytext h4 {
+	text-shadow: -3px 3px 0px rgb(0, 0, 0);
+	filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
+span.bodytext b {
+	text-shadow: -2px 2px 0px rgb(0, 0, 0);
+	filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
 img.Geg {
 	max-height: 75%;
 	height: auto;
@@ -203,7 +230,6 @@ main {
     display: flex;
     flex-direction: column;
 	font-size: 20px;
-	text-shadow: -1px 1px 0px rgb(0, 0, 0);
 }
 
 header h2 a,
@@ -216,34 +242,8 @@ main h2 span,
 main h3 a,
 main h3 em {
     font-family: 'Orbitron';
-    text-shadow: -3px 3px 0px rgb(0, 0, 0);
 	color: white;
 	margin: 0em;
-}
-
-main h1,
-main h2 {
-    margin: 0em;
-}
-
-main h1.title {
-    font-size: 3em;
-}
-
-main h1.separate {
-    margin-top: 0.5em;
-}
-
-main table {
-    margin-top: 1em;
-}
-
-main section {
-    margin: 1.5em 0em;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 1em;
 }
 
 hr {
@@ -404,7 +404,6 @@ footer br {
 	text-align: center;
 	justify-content: center;
 	background-color: white;
-	text-shadow: 0px 0px 0px rgb(0, 0, 0);
 	box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
 	transition: ease-in-out all 0.5s;
 	position: absolute;
@@ -423,7 +422,6 @@ footer br {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	color: black;
-	text-shadow: 0px 0px 0px rgb(0, 0, 0);
 }
 
 #navigation a:hover {
@@ -470,19 +468,37 @@ footer br {
 	padding: 30px;
 	line-height: 30px;
 	text-align: justify;
-	text-shadow: -1px 1px 0px rgb(0, 0, 0);
-	filter: drop-shadow(-1px 1px 0px rgb(0, 0, 0));
-}
-
-#backstory h2,
-#backstory h3 {
-	text-shadow: -2px 2px 0px rgb(0, 0, 0);
 }
 
 #homeplayer {
 	float: right;
 	margin-left: 50px;
 	margin-bottom: 20px;
+	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
+}
+
+#findus {
+	font-family: 'Orbitron';
+	font-size: 30px;
+	color: white;
+	margin: 0em;
+}
+
+#logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+img.logos {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	height: 30px;
+	padding: 5px;
+	cursor: pointer;
 }
 
 #about {
@@ -514,7 +530,6 @@ div.container {
     width: 100%;
     overflow: hidden;
     padding-top: 56.25%;
-    /* 16:9 Aspect Ratio */
 }
 
 iframe.responsive-iframe {
@@ -542,5 +557,4 @@ iframe.spotiframe {
 	max-width: 100%;
     width: 496px;
     height: 279px;
-	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
 }
