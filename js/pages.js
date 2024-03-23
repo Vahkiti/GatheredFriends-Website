@@ -39,41 +39,12 @@ else if (window.location.hash == "#contact") {
 
 };
 
-// Nav Buttons
-document.getElementById('landingbutton').onclick = function () {
-	CurrentPage = 'splash';
-	FadePage();
-	HideHeader();
-	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
-}
-document.getElementById('enterbutton').onclick = function () {
-	CurrentPage = 'home';
-	FadePage();
-	ShowHeader();
-}
-document.getElementById('homebutton').onclick = function () {
-	CurrentPage = 'home';
-	FadePage();
-	ShowHeader();
-}
-document.getElementById('aboutbutton').onclick = function () {
-	ShrinkHeader();
-}
-document.getElementById('watchbutton').onclick = function () {
-	ShrinkHeader();
-}
-document.getElementById('readbutton').onclick = function () {
-	ShrinkHeader();
-}
-document.getElementById('contactbutton').onclick = function () {
-	ShrinkHeader();
-}
-
 window.onhashchange = function () {
 	if (window.location.hash == "") {
 		CurrentPage = 'splash';
 		FadePage();
 		HideHeader();
+		window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
 	}
 	else if (window.location.hash == "#landing") {
 		CurrentPage = 'splash';
@@ -107,6 +78,36 @@ window.onhashchange = function () {
 	}
 }
 
+// Nav Buttons
+document.getElementById('landingbutton').onclick = function () {
+	CurrentPage = 'splash';
+	FadePage();
+	HideHeader();
+	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
+}
+document.getElementById('enterbutton').onclick = function () {
+	CurrentPage = 'home';
+	FadePage();
+	ShowHeader();
+}
+document.getElementById('homebutton').onclick = function () {
+	CurrentPage = 'home';
+	FadePage();
+	ShowHeader();
+}
+document.getElementById('aboutbutton').onclick = function () {
+	ShrinkHeader();
+}
+document.getElementById('watchbutton').onclick = function () {
+	ShrinkHeader();
+}
+document.getElementById('readbutton').onclick = function () {
+	ShrinkHeader();
+}
+document.getElementById('contactbutton').onclick = function () {
+	ShrinkHeader();
+}
+
 //Fade Functions
 function HideHeader() {
 	document.getElementById("header").style.height = "0pc";
@@ -129,6 +130,7 @@ function ShowHeader() {
 function ShrinkHeader() {
 	document.getElementById("header").style.height = "10vh";
 	document.getElementById("header").style.maxHeight = "10vh";
+	document.getElementsByClassName("gftext")[0].style.marginTop = "3%";
 }
 
 function HidePage() {
