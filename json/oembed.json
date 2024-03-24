@@ -1,12 +1,6 @@
 {
-	"version": "1.0",
-	"type": "photo",
-	"width": 240,
-	"height": 160,
-	"url": "../img/ogp.jpg",
-	"title": "Gathered Friends",
-	"author_name": "Presented by: The Beaverhouse",
-	"author_url": "https://www.youtube.com/Vahkiti",
-	"provider_name": "A BIONICLE Book Club Podcast",
-	"provider_url": "https://gatheredfriends.com/"
+   "author_name": "Presented by: The Beaverhouse",
+   "author_url": "https://www.youtube.com/Vahkiti",
+   "provider_name": "A BIONICLE Book Club Podcast",
+   "provider_url": "https://gatheredfriends.com/"
 }
