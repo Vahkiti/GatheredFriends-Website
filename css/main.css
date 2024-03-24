@@ -69,11 +69,6 @@
 	img.logos {
 		height: 20px !important;		
 	}
-	
-	div.wip h2 {
-		padding-top: 35px !important;	
-		font-size: 20px !important;		
-	}
 		
 	#splash {
 		display: none;
@@ -87,26 +82,19 @@
 
 @media screen and (max-height: 480px) {
 	div.gfimg__container {
-        padding-left: 30px; !important;
+        padding-left: 30px !important;
     }    
 	
 	div.bhimg__container {
-        padding-right: 50px; !important;
+        padding-right: 50px !important;
     }
 	
-	
-	div.wip img {
-		min-width: 30vw !important;
-		max-width: 300px !important;
+	#navigation {
+		font-size: 40% !important;
 	}
 	
 	div.wip h2 {
-		padding-top: 50px !important;	
-		font-size: 20px !important;		
-	}
-	
-	#navigation {
-		font-size: 40%;
+		font-size: 20px !important;
 	}
 }
 
@@ -226,20 +214,28 @@ span.bodytext b {
 
 div.wip {
 	display: flex;
+	padding: 10vh;
 	flex-direction: column;
 	object-fit: contain;
 	align-items: center;
 	text-align: center;
 	text-shadow: -2px 2px 0px rgb(0, 0, 0);
-	filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.2));
 }
 
-div.wip img {	
-	min-width: 35vw;
-	max-width: 350px;
-	padding-top: 25px;
-	padding-left: 25px;
-	margin-bottom: -100px;
+div.wip img {
+	max-height: 75%;
+	height: auto;
+	position: fixed;
+	top: 10vh;
+	padding-left: 70px;
+}
+
+div.wip h2 {
+	font-size: 30px;
+	max-height: 75%;
+	height: auto;
+	position: absolute;
+	top: 55vh;
 }
 
 img.Geg {
@@ -505,6 +501,7 @@ footer br {
 #home {
 	display: none;
 	width: 100vw;
+	min-width: 100vw;
 	text-align: left;
     flex-direction: row;
 	opacity: 0;
