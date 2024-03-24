@@ -93,6 +93,10 @@
 		font-size: 40% !important;
 	}
 	
+	#contents {
+		height: 60% !important;
+	}
+	
 	div.wip h2 {
 		font-size: 20px !important;
 	}
