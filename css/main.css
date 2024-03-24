@@ -212,6 +212,18 @@ span.bodytext b {
 	filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.2));
 }
 
+span.bodytext a {
+    color: lightgray;
+}
+
+span.bodytext a:hover {
+    color: WhiteSmoke;
+}
+
+span.bodytext a:active {
+    color: darkgray;
+}
+
 div.wip {
 	display: flex;	
 	flex-direction: column;
