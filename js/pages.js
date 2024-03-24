@@ -40,15 +40,17 @@ else if (window.location.hash == "#contact") {
 
 window.onhashchange = function () {
 	if (window.location.hash == "#landing") {
-		FadeOutPage();
-		HideHeader();
-		CurrentPage = 'splash';
-		setTimeout(function () {		
-			FadeInPage();
-		}, 550);
-		document.getElementById("contents").style.overflow = "hidden";
-		document.getElementById('splash').style.display = "block";
-		window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
+		if (CurrentPage != "splash") {
+			FadeOutPage();
+			HideHeader();
+			CurrentPage = 'splash';
+			setTimeout(function () {		
+				FadeInPage();
+			}, 550);
+			document.getElementById("contents").style.overflow = "hidden";
+			document.getElementById('splash').style.display = "block";
+			window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, '') + "#landing"
+		}
 	}
 	else if (window.location.hash == "#home") {
 	FadeOutPage();
