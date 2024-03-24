@@ -90,11 +90,11 @@
     }
 	
 	#navigation {
-		font-size: 40% !important;
+		font-size: 50% !important;
 	}
 	
 	#contents {
-		height: 60% !important;
+		height: 70% !important;
 	}
 }
 
@@ -357,7 +357,7 @@ body .zoom {
 span.exitSpan {
     position: absolute;
     top: 1em;
-    right: 1.5em;
+    right: 3em;
     max-width: 1em;
     max-height: 1em;
     font-size: 2em;
