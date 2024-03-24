@@ -59,7 +59,7 @@
 	}
 	
 	#findus {
-		font-size: 20px !important;
+		font-size: 15px !important;
 	}
 	
 	#logos {
@@ -513,7 +513,7 @@ footer br {
 	font-family: 'Orbitron';
 	font-size: 30px;
 	color: white;
-	margin: 0em;
+	margin-right: 0.5em;
 }
 
 #logos {
@@ -522,6 +522,7 @@ footer br {
     align-items: center;
     height: 100%;
     width: 100%;
+	margin-top: 0.5em;
 }
 
 img.logos {
@@ -576,6 +577,13 @@ div.container {
     padding-top: 56.25%;
 }
 
+div.containerhome {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
 iframe.responsive-iframe {
     padding-top: 7%;
     padding-left: 10%;
@@ -589,6 +597,17 @@ iframe.responsive-iframe {
     width: 75%;
     height: 75%;
     border: none;
+}
+
+iframe.ytframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;	
 }
 
 iframe.spotiframe {
