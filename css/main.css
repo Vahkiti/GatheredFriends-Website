@@ -96,10 +96,6 @@
 	#contents {
 		height: 60% !important;
 	}
-	
-	div.wip h2 {
-		font-size: 20px !important;
-	}
 }
 
 header {
@@ -217,8 +213,7 @@ span.bodytext b {
 }
 
 div.wip {
-	display: flex;
-	padding: 10vh;
+	display: flex;	
 	flex-direction: column;
 	object-fit: contain;
 	align-items: center;
@@ -227,19 +222,8 @@ div.wip {
 }
 
 div.wip img {
-	max-height: 75%;
+	max-height: 90%;
 	height: auto;
-	position: fixed;
-	top: 10vh;
-	padding-left: 70px;
-}
-
-div.wip h2 {
-	font-size: 30px;
-	max-height: 75%;
-	height: auto;
-	position: absolute;
-	top: 55vh;
 }
 
 img.Geg {
