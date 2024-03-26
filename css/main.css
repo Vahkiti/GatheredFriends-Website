@@ -114,6 +114,10 @@ header {
 }
 
 div.panels img.CornerPanelL {
+	z-index: -1;
+}
+
+div.panels img.CornerPanelL {
 	max-height: 80%;
 	height: auto;
 	z-index: -1;
