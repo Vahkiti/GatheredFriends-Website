@@ -4,37 +4,44 @@ var CurrentPage;
 if (window.location.hash == "") {
 	CurrentPage = "splash";
 	ResetPage();
+	ClearAll();
 	document.getElementById("splash").style.display = "block";
 	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, "") + "#landing"
 }
 else if (window.location.hash == "#landing") {
 	CurrentPage = "splash";
 	ResetPage();
+	ClearAll();
 	document.getElementById("splash").style.display = "block";
 }
 else if (window.location.hash == "#home") {
 	CurrentPage = "home";
 	ResetPage();
+	ClearAll();
 	ShowHeader();
 }
 else if (window.location.hash == "#about") {
 	CurrentPage = "about";
 	ResetPage();
+	ClearAll();
 	ShrinkHeader();
 }
 else if (window.location.hash == "#watch") {
 	CurrentPage = "watch";
 	ResetPage();
+	ClearAll();
 	ShrinkHeader();
 }
 else if (window.location.hash == "#read") {
 	CurrentPage = "read";
 	ResetPage();
+	ClearAll();
 	ShrinkHeader();
 }
 else if (window.location.hash == "#contact") {
 	CurrentPage = "contact";
 	ResetPage();
+	ClearAll();
 	ShrinkHeader();
 }
 
@@ -53,7 +60,7 @@ window.onhashchange = function () {
 		}
 	}
 	else if (window.location.hash == "#home") {
-	FadeOutPage();
+		FadeOutPage();
 		setTimeout(function () {
 			CurrentPage = "home";
 			FadeInPage();
@@ -196,31 +203,40 @@ function ResetPage() {
 	if (CurrentPage != "splash") {
 		document.getElementById("splash").style.display = "none";
 		document.getElementById("splash").style.opacity = "0";
+		document.getElementById("splash").style.width = "0%";
 	}
 	if (CurrentPage != "home") {
 		document.getElementById("home").style.display = "none";
 		document.getElementById("home").style.opacity = "0";
+		document.getElementById("home").style.width = "0%";
 	}
 	if (CurrentPage != "about") {
 		document.getElementById("about").style.display = "none";
 		document.getElementById("about").style.opacity = "0";
+		document.getElementById("about").style.width = "0%";
 	}
 	if (CurrentPage != "watch") {
 		document.getElementById("watch").style.display = "none";
 		document.getElementById("watch").style.opacity = "0";
+		document.getElementById("watch").style.width = "0%";
 	}
 	if (CurrentPage != "read") {
 		document.getElementById("read").style.display = "none";
 		document.getElementById("read").style.opacity = "0";
+		document.getElementById("read").style.width = "0%";
 	}
 	if (CurrentPage != "contact") {
 		document.getElementById("contact").style.display = "none";
 		document.getElementById("contact").style.opacity = "0";
+		document.getElementById("contact").style.width = "0%";
 	}
-	
+}
+
+function ClearAll() {
 	document.getElementById(CurrentPage).style.display = "flex";
 	document.getElementById(CurrentPage).style.opacity = "1";
 	document.getElementById(CurrentPage).style.zIndex = "auto";
+	document.getElementById(CurrentPage).style.width = "100vw";
 	document.getElementById("header").style.zIndex = "20";
 }
 
@@ -230,6 +246,8 @@ function FadeOutPage() {
 	document.getElementById("contents").style.width = "auto";
 	document.getElementById("contents").style.overflow = "hidden";
 	setTimeout(function () {
+		ResetPage();
+		document.getElementById(CurrentPage).style.width = "0%";
 		document.getElementById(CurrentPage).style.display = "none";
 	}, 500);
 }
@@ -237,16 +255,19 @@ function FadeOutPage() {
 function FadeInPage() {
 	if (CurrentPage != "splash") {
 		document.getElementById(CurrentPage).style.display = "flex";
+		document.getElementById("contents").style.display = "flex";
 	}
 	else {
 		document.getElementById("splash").style.display = "block";
+		document.getElementById("contents").style.display = "none";
 	}
+	document.getElementById(CurrentPage).style.width = "100vw";
+	document.getElementById("contents").style.width = "100vw";
 	setTimeout(function () {
 		document.getElementById(CurrentPage).style.opacity = "1";
 		setTimeout(function () {
 			document.getElementById(CurrentPage).style.zIndex = "auto";
-			document.getElementById("header").style.zIndex = "20";
-			document.getElementById("contents").style.width = "100%";
+			document.getElementById("header").style.zIndex = "20";			
 			document.getElementById("contents").style.overflow = "scroll";
 		}, 550);
 	}, 30);	

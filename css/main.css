@@ -488,7 +488,7 @@ footer br {
 #contents {
 	display: flex;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	bottom: 3vh;
 	transition: ease-in-out all 0.5s;
 	z-index: -1;
@@ -555,7 +555,7 @@ img.logos {
 	opacity: 0;
 	object-fit: contain;
     justify-content: center;
-	width: 100vw;
+	width: 0%;
 	transition: ease-in-out all 0.5s;
 }
 
@@ -564,7 +564,7 @@ img.logos {
 	opacity: 0;
 	object-fit: contain;
     justify-content: center;
-	width: 100vw;
+	width: 0%;
 	transition: ease-in-out all 0.5s;
 }
 
@@ -573,7 +573,7 @@ img.logos {
 	opacity: 0;
 	object-fit: contain;
     justify-content: center;
-	width: 100vw;
+	width: 0%;
 	transition: ease-in-out all 0.5s;
 }
 
@@ -582,7 +582,7 @@ img.logos {
 	opacity: 0;
 	object-fit: contain;
     justify-content: center;
-	width: 100vw;
+	width: 0%;
 	transition: ease-in-out all 0.5s;
 }
 
