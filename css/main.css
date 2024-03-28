@@ -69,6 +69,12 @@
 	img.logos {
 		height: 20px !important;		
 	}
+	
+	#watchplayers {
+		flex-direction: column !important;
+		height: auto !important;
+		max-height: auto !important;
+	}
 		
 	#splash {
 		display: none;
@@ -529,15 +535,6 @@ footer br {
 	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
 }
 
-#watchplayer {
-	display: flex;
-	flex-direction: column;
-	float: right;
-	margin-left: 50px;
-	margin-bottom: 20px;
-	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
-}
-
 #findus {
 	font-family: 'Orbitron';
 	font-size: 30px;
@@ -665,7 +662,6 @@ iframe.watchframeslr {
 	justify-content: center;
 	width: 100%;
 	height: 100%;
-	max-height: 450px;
 }
 
 #bottomtext {
@@ -691,7 +687,7 @@ input[type=radio] {
 .card {
 	position: absolute;
 	width: 60%;
-	height: 100%;
+	height: 450px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -703,7 +699,7 @@ input[type=radio] {
 	display: flex;
 	position: relative;
 	width: 100%;
-	height: 43%;
+	height: 450px;
 	margin-bottom: 20px;
 }
 
