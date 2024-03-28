@@ -70,11 +70,18 @@
 		height: 20px !important;		
 	}
 	
-	#watchplayers {
+	#carousels {		
 		flex-direction: column !important;
-		height: auto !important;
-		max-height: auto !important;
+		display: block !important;
+		height: 900px !important;	
 	}
+	
+	.carouselcontainer {
+		display: block !important;
+		height: 100% !important;	
+	}
+	
+
 		
 	#splash {
 		display: none;
@@ -574,9 +581,17 @@ img.logos {
 	width: 100vw;
 	min-width: 100vw;
 	text-align: center;
+	justify-content: center;
     flex-direction: column;
 	opacity: 0;
 	transition: ease-in-out all 0.5s;
+}
+
+#carousels {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
 }
 
 #read {
@@ -619,7 +634,7 @@ iframe.responsive-iframe {
     border: none;
 }
 
-iframe.homeframe {
+iframe.embedframeyt {
 	border-radius: 12px;
     position: absolute;
     top: 0;
@@ -628,40 +643,28 @@ iframe.homeframe {
     right: 0;
     width: 100%;
     height: 100%;
+	pointer-events: none;
 }
 
-iframe.watchframeyt {
+iframe.embedframespot {
 	border-radius: 12px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    min-height: 270px;
-	pointer-events: none;
-}
-
-iframe.watchframespot {
-	border-radius: 12px;
-    position: relative;
+    height: 50%;
 	padding-top: 20px;
-	max-width: 100%;
-    width: 496px;
-    height: 100px;
 	pointer-events: none;
 }
 
-iframe.watchframeslr {
+iframe.embedframeslr {
 	border-radius: 12px;
     position: relative;
 	max-width: 100%;
     width: 496px;
     height: 100px;
-}
-
-#watchplayers {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
 }
 
 #bottomtext {
@@ -675,9 +678,8 @@ input[type=radio] {
 
 .carouselcontainer {
 	width: 100%;
+	height: auto;
 	max-width: 800px;
-	max-height: 450px;
-	height: 100%;
 	transform-style: preserve-3d;
 	display: block;
 	align-items: center;
@@ -687,7 +689,7 @@ input[type=radio] {
 .card {
 	position: absolute;
 	width: 60%;
-	height: 450px;
+	height: 100%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -699,7 +701,7 @@ input[type=radio] {
 	display: flex;
 	position: relative;
 	width: 100%;
-	height: 450px;
+	height: 100%;
 	margin-bottom: 20px;
 }
 
@@ -725,10 +727,10 @@ input[type=radio] {
 	transform: translatex(0) scale(1);
 	opacity: 1;
 	z-index: 1;
-	iframe.watchframeyt {
+	iframe.embedframeyt {
 		pointer-events: auto;
 	}
-	iframe.watchframespot {
+	iframe.embedframespot {
 		pointer-events: auto;
 	}
 }
@@ -755,10 +757,10 @@ input[type=radio] {
 	transform: translatex(0) scale(1);
 	opacity: 1;
 	z-index: 1;
-	iframe.watchframeyt {
+	iframe.embedframeyt {
 		pointer-events: auto;
 	}
-	iframe.watchframespot {
+	iframe.embedframespot {
 		pointer-events: auto;
 	}
 }
