@@ -582,11 +582,6 @@ img.logos {
 	transition: ease-in-out all 0.5s;
 }
 
-#players {
-	display: flex;
-	flex-direction: row;
-}	
-
 #read {
 	display: none;
 	opacity: 0;
@@ -606,13 +601,6 @@ img.logos {
 }
 
 div.container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 56.25%;
-}
-
-div.embedcontainer {
     position: relative;
     width: 100%;
     overflow: hidden;
