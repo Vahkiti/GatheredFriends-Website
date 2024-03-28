@@ -594,14 +594,6 @@ img.logos {
 	transition: ease-in-out all 0.5s;
 }
 
-#carousels {
-	display: flex;
-	flex-direction: row;
-	height: 100%;
-	width: 100%;
-	justify-content: center;
-}
-
 #read {
 	display: none;
 	opacity: 0;
@@ -682,6 +674,14 @@ iframe.embedframeslr {
 
 input[type=radio] {
   display: none;
+}
+
+#carousels {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
 }
 
 .carouselcontainer {
