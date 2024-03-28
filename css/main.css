@@ -70,10 +70,15 @@
 		height: 20px !important;		
 	}
 	
+	#watch {
+		display: block !important;
+		height: 100% !important;	
+	}	
+	
 	#carousels {		
 		flex-direction: column !important;
 		display: block !important;
-		height: 900px !important;	
+		height: 100% !important;	
 	}
 	
 	.carouselcontainer {
@@ -81,7 +86,9 @@
 		height: 100% !important;	
 	}
 	
-
+	.cards {
+		height: 100% !important;	
+	}
 		
 	#splash {
 		display: none;
@@ -592,6 +599,7 @@ img.logos {
 	flex-direction: row;
 	height: 100%;
 	width: 100%;
+	justify-content: center;
 }
 
 #read {
