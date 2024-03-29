@@ -196,7 +196,8 @@ function ShrinkHeader() {
 	document.getElementById("navigation").style.paddingBottom = "5px";
 	document.getElementById("navtext").style.fontSize = "100%";
 	document.getElementsByClassName("gftext")[0].style.marginTop = "3%";
-	document.getElementById("contents").style.height = "80%";
+	document.getElementById("contents").style.height = "77%";
+	document.getElementById("contents").style.overflow = "scroll";
 }
 
 function ResetPage() {
@@ -216,9 +217,9 @@ function ResetPage() {
 		document.getElementById("about").style.width = "0%";
 	}
 	if (CurrentPage != "watch") {
-		document.getElementById("watch").style.display = "none";
+		document.getElementById("watch").style.setProperty("display", "none", "important")
 		document.getElementById("watch").style.opacity = "0";
-		document.getElementById("watch").style.width = "0%";
+		document.getElementById("watch").style.setProperty("width", "0%", "important")
 	}
 	if (CurrentPage != "read") {
 		document.getElementById("read").style.display = "none";
@@ -243,12 +244,14 @@ function ClearAll() {
 function FadeOutPage() {
 	document.getElementById(CurrentPage).style.opacity = "0";
 	document.getElementById(CurrentPage).style.zIndex = "-2";
+	document.getElementById(CurrentPage).style.transition = "opacity 0.5s";
 	document.getElementById("contents").style.width = "auto";
 	document.getElementById("contents").style.overflow = "hidden";
 	setTimeout(function () {
 		ResetPage();
 		document.getElementById(CurrentPage).style.width = "0%";
 		document.getElementById(CurrentPage).style.display = "none";
+		document.getElementById(CurrentPage).style.transition = "0s";
 	}, 500);
 }
 
@@ -261,6 +264,7 @@ function FadeInPage() {
 		document.getElementById("splash").style.display = "block";
 		document.getElementById("contents").style.display = "none";
 	}
+	document.getElementById(CurrentPage).style.transition = "opacity 0.5s";
 	document.getElementById(CurrentPage).style.width = "100vw";
 	document.getElementById("contents").style.width = "100vw";
 	setTimeout(function () {
@@ -269,6 +273,7 @@ function FadeInPage() {
 			document.getElementById(CurrentPage).style.zIndex = "auto";
 			document.getElementById("header").style.zIndex = "20";			
 			document.getElementById("contents").style.overflow = "scroll";
+			document.getElementById(CurrentPage).style.transition = "0s";
 		}, 550);
 	}, 30);	
 }
