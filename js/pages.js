@@ -196,7 +196,7 @@ function ShrinkHeader() {
 	document.getElementById("navigation").style.paddingBottom = "5px";
 	document.getElementById("navtext").style.fontSize = "100%";
 	document.getElementsByClassName("gftext")[0].style.marginTop = "3%";
-	document.getElementById("contents").style.height = "83%";
+	document.getElementById("contents").style.height = "77%";
 	document.getElementById("contents").style.overflow = "scroll";
 }
 
@@ -219,7 +219,6 @@ function ResetPage() {
 	if (CurrentPage != "watch") {
 		document.getElementById("watch").style.setProperty("display", "none", "important")
 		document.getElementById("watch").style.opacity = "0";
-		document.getElementById("watch").style.setProperty("height", "0%", "important")
 		document.getElementById("watch").style.setProperty("width", "0%", "important")
 	}
 	if (CurrentPage != "read") {
@@ -245,7 +244,7 @@ function ClearAll() {
 function FadeOutPage() {
 	document.getElementById(CurrentPage).style.opacity = "0";
 	document.getElementById(CurrentPage).style.zIndex = "-2";
-	document.getElementById(CurrentPage).style.transition = "0.5s";
+	document.getElementById(CurrentPage).style.transition = "opacity 0.5s";
 	document.getElementById("contents").style.width = "auto";
 	document.getElementById("contents").style.overflow = "hidden";
 	setTimeout(function () {
@@ -265,7 +264,7 @@ function FadeInPage() {
 		document.getElementById("splash").style.display = "block";
 		document.getElementById("contents").style.display = "none";
 	}
-	document.getElementById(CurrentPage).style.transition = "0.5s";
+	document.getElementById(CurrentPage).style.transition = "opacity 0.5s";
 	document.getElementById(CurrentPage).style.width = "100vw";
 	document.getElementById("contents").style.width = "100vw";
 	setTimeout(function () {
