@@ -197,7 +197,12 @@ function ShrinkHeader() {
 	document.getElementById("navtext").style.fontSize = "100%";
 	document.getElementsByClassName("gftext")[0].style.marginTop = "3%";
 	document.getElementById("contents").style.height = "77%";
-	document.getElementById("contents").style.overflow = "scroll";
+	if (CurrentPage != "contact") {
+		document.getElementById("contents").style.overflow = "scroll";
+	}
+	else {
+		document.getElementById("contents").style.overflow = "hidden";
+	}
 }
 
 function ResetPage() {
@@ -272,7 +277,12 @@ function FadeInPage() {
 		setTimeout(function () {
 			document.getElementById(CurrentPage).style.zIndex = "auto";
 			document.getElementById("header").style.zIndex = "20";			
+			if (CurrentPage != "contact") {
 			document.getElementById("contents").style.overflow = "scroll";
+			}
+			else {
+				document.getElementById("contents").style.overflow = "hidden";
+			}
 			document.getElementById(CurrentPage).style.transition = "0s";
 		}, 550);
 	}, 30);	

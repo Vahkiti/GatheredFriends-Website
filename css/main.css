@@ -98,6 +98,8 @@
 	#navigation {
 		font-size: 40%;
 	}
+	
+
 }
 
 @media screen and (max-height: 480px) {
@@ -603,6 +605,7 @@ img.logos {
     justify-content: center;
 	width: 0%;
 	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
 div.container {
@@ -659,6 +662,12 @@ iframe.embedframeslr {
     width: 496px;
     height: 100px;
 	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
+}
+
+iframe.contactframe {
+	overflow: hidden;
+	min-height: 100%;
+	width: 100%;
 }
 
 #bottomtext {
