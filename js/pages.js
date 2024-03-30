@@ -22,6 +22,7 @@ else if (window.location.hash == "#home") {
 	ClearAll();
 	ShowHeader();
 	document.title = "Gathered Friends - Home";
+	document.getElementById("title").content = "Home";
 }
 else if (window.location.hash == "#about") {
 	CurrentPage = "about";
