@@ -22,7 +22,8 @@ else if (window.location.hash == "#home") {
 	ClearAll();
 	ShowHeader();
 	document.title = "Gathered Friends - Home";
-	document.getElementById("title").content = "Home";
+	document.getElementById("maintitle").setAttribute("content", "Home");
+	document.getElementById("twittertitle").setAttribute("content", "Home");
 }
 else if (window.location.hash == "#about") {
 	CurrentPage = "about";
