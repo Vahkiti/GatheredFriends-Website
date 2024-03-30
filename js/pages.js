@@ -31,6 +31,8 @@ else if (window.location.hash == "#about") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - About"
+		document.querySelector('meta[property="og:title"]').setAttribute("content", "About");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "About");
 }
 else if (window.location.hash == "#watch") {
 	CurrentPage = "watch";
@@ -38,6 +40,8 @@ else if (window.location.hash == "#watch") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - Watch";
+		document.querySelector('meta[property="og:title"]').setAttribute("content", "Watch");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Watch");
 }
 else if (window.location.hash == "#read") {
 	CurrentPage = "read";
@@ -45,6 +49,8 @@ else if (window.location.hash == "#read") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - Read";
+		document.querySelector('meta[property="og:title"]').setAttribute("content", "Read");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Read");
 }
 else if (window.location.hash == "#contact") {
 	CurrentPage = "contact";
@@ -52,6 +58,8 @@ else if (window.location.hash == "#contact") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - Contact";
+		document.querySelector('meta[property="og:title"]').setAttribute("content", "Contact");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Contact");
 }
 
 window.onhashchange = function () {
