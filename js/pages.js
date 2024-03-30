@@ -7,42 +7,49 @@ if (window.location.hash == "") {
 	ClearAll();
 	document.getElementById("splash").style.display = "block";
 	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, "") + "#landing"
+	document.title = "Gathered Friends: A BIONICLE Book Club Podcast";
 }
 else if (window.location.hash == "#landing") {
 	CurrentPage = "splash";
 	ResetPage();
 	ClearAll();
 	document.getElementById("splash").style.display = "block";
+	document.title = "Gathered Friends: A BIONICLE Book Club Podcast";
 }
 else if (window.location.hash == "#home") {
 	CurrentPage = "home";
 	ResetPage();
 	ClearAll();
 	ShowHeader();
+	document.title = "Gathered Friends - Home";
 }
 else if (window.location.hash == "#about") {
 	CurrentPage = "about";
 	ResetPage();
 	ClearAll();
 	ShrinkHeader();
+	document.title = "Gathered Friends - About"
 }
 else if (window.location.hash == "#watch") {
 	CurrentPage = "watch";
 	ResetPage();
 	ClearAll();
 	ShrinkHeader();
+	document.title = "Gathered Friends - Watch";
 }
 else if (window.location.hash == "#read") {
 	CurrentPage = "read";
 	ResetPage();
 	ClearAll();
 	ShrinkHeader();
+	document.title = "Gathered Friends - Read";
 }
 else if (window.location.hash == "#contact") {
 	CurrentPage = "contact";
 	ResetPage();
 	ClearAll();
 	ShrinkHeader();
+	document.title = "Gathered Friends - Contact";
 }
 
 window.onhashchange = function () {
@@ -56,8 +63,9 @@ window.onhashchange = function () {
 			}, 550);
 			document.getElementById("contents").style.overflow = "hidden";
 			document.getElementById("splash").style.display = "block";
-			window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, "") + "#landing"
+			window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, "") + "#landing"			
 		}
+		document.title = "Gathered Friends: A BIONICLE Book Club Podcast";
 	}
 	else if (window.location.hash == "#home") {
 		FadeOutPage();
@@ -65,6 +73,7 @@ window.onhashchange = function () {
 			CurrentPage = "home";
 			FadeInPage();
 			ShowHeader();
+			document.title = "Gathered Friends - Home";
 		}, 550);	
 	}
 	else if (window.location.hash == "#about") {
@@ -73,6 +82,7 @@ window.onhashchange = function () {
 			CurrentPage = "about";
 			FadeInPage();
 			ShrinkHeader();
+			document.title = "Gathered Friends - About";
 		}, 550);	
 	}
 	else if (window.location.hash == "#watch") {
@@ -81,6 +91,7 @@ window.onhashchange = function () {
 			CurrentPage = "watch";
 			FadeInPage();
 			ShrinkHeader();
+			document.title = "Gathered Friends - Watch";
 		}, 550);	
 	}
 	else if (window.location.hash == "#read") {
@@ -89,6 +100,7 @@ window.onhashchange = function () {
 			CurrentPage = "read";
 			FadeInPage();
 			ShrinkHeader();
+			document.title = "Gathered Friends - Read";
 		}, 550);	
 	}
 	else if (window.location.hash == "#contact") {
@@ -97,6 +109,7 @@ window.onhashchange = function () {
 			CurrentPage = "contact";
 			FadeInPage();
 			ShrinkHeader();
+			document.title = "Gathered Friends - Contact";
 		}, 550);	
 	}
 }
