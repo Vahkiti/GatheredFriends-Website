@@ -8,6 +8,8 @@ if (window.location.hash == "") {
 	document.getElementById("splash").style.display = "block";
 	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/, "") + "#landing"
 	document.title = "Gathered Friends: A BIONICLE Book Club Podcast";
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Gathered Friends");
 }
 else if (window.location.hash == "#landing") {
 	CurrentPage = "splash";
@@ -15,6 +17,8 @@ else if (window.location.hash == "#landing") {
 	ClearAll();
 	document.getElementById("splash").style.display = "block";
 	document.title = "Gathered Friends: A BIONICLE Book Club Podcast";
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Gathered Friends");
 }
 else if (window.location.hash == "#home") {
 	CurrentPage = "home";
@@ -22,8 +26,8 @@ else if (window.location.hash == "#home") {
 	ClearAll();
 	ShowHeader();
 	document.title = "Gathered Friends - Home";
-	document.querySelector('meta[property="og:title"]').setAttribute("content", "Home");
-	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Home");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#home");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Gathered Friends - Home");
 }
 else if (window.location.hash == "#about") {
 	CurrentPage = "about";
@@ -31,8 +35,8 @@ else if (window.location.hash == "#about") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - About"
-		document.querySelector('meta[property="og:title"]').setAttribute("content", "About");
-	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "About");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#about");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Gathered Friends - About");
 }
 else if (window.location.hash == "#watch") {
 	CurrentPage = "watch";
@@ -40,8 +44,8 @@ else if (window.location.hash == "#watch") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - Watch";
-		document.querySelector('meta[property="og:title"]').setAttribute("content", "Watch");
-	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Watch");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#watch");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Gathered Friends - Watch");
 }
 else if (window.location.hash == "#read") {
 	CurrentPage = "read";
@@ -49,8 +53,8 @@ else if (window.location.hash == "#read") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - Read";
-		document.querySelector('meta[property="og:title"]').setAttribute("content", "Read");
-	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Read");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#read");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Gathered Friends - Read");
 }
 else if (window.location.hash == "#contact") {
 	CurrentPage = "contact";
@@ -58,8 +62,8 @@ else if (window.location.hash == "#contact") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - Contact";
-		document.querySelector('meta[property="og:title"]').setAttribute("content", "Contact");
-	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Contact");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#contact");
+	document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Gathered Friends - Contact");
 }
 
 window.onhashchange = function () {
