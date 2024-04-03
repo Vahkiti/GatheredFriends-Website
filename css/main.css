@@ -99,7 +99,33 @@
 		font-size: 40%;
 	}
 	
-
+	#intro h1 {
+		font-size: 25px !important;
+	}
+	
+	#bc,
+	#woh,
+	#mnl,
+	#bmp	{
+		width: 100% !important;
+		text-align: center !important;
+	}	
+	
+	#bc h2,
+	#woh h2,
+	#mnl h2,
+	#bmp h2{
+		font-size: 25px !important;
+	}	
+	
+	#bc img,
+	#woh img,
+	#mnl img,
+	#bmp img {
+		padding: 20px !important;
+		float: none !important;
+		width: 100% !important;
+	}
 }
 
 @media screen and (max-height: 480px) {
@@ -598,11 +624,58 @@ img.logos {
 
 #read {
 	display: none;
-	opacity: 0;
-	object-fit: contain;
-    justify-content: center;
 	width: 0%;
+	text-align: center;
+    flex-direction: column;
+	opacity: 0;
 	padding-top: 20px;
+}
+
+#intro {
+	text-align: center;
+}
+
+#bc img {
+	float: right;
+	max-width: 15%;
+	min-width: 200px;
+	width: auto;
+	height: 100%;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+#woh img {
+	float: left;
+	max-width: 9%;
+	min-width: 120px;
+	width: auto;
+	height: 100%;
+	padding-right: 10px;
+	cursor: pointer;
+	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
+}
+
+#mnl img {
+	float: right;
+	max-width: 15%;
+	min-width: 200px;
+	width: auto;
+	height: 100%;
+	padding-left: 10px;
+	cursor: pointer;
+	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
+}
+
+#bmp img {
+	float: left;
+	max-width: 10%;
+	min-width: 150px;
+	width: auto;
+	height: 100%;
+	padding-right: 10px;
+	cursor: pointer;
+	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
 }
 
 #contact {
