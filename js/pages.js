@@ -26,7 +26,7 @@ else if (window.location.hash == "#home") {
 	ClearAll();
 	ShowHeader();
 	document.title = "Gathered Friends - Home";
-	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#home");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/%23home");
 	document.querySelector('meta[property="og:title"]').setAttribute("content", "Gathered Friends - Home");
 }
 else if (window.location.hash == "#about") {
@@ -35,7 +35,7 @@ else if (window.location.hash == "#about") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - About"
-	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#about");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/%23about");
 	document.querySelector('meta[property="og:title"]').setAttribute("content", "Gathered Friends - About");
 }
 else if (window.location.hash == "#watch") {
@@ -44,7 +44,7 @@ else if (window.location.hash == "#watch") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - Watch";
-	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#watch");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/%23watch");
 	document.querySelector('meta[property="og:title"]').setAttribute("content", "Gathered Friends - Watch");
 }
 else if (window.location.hash == "#read") {
@@ -53,7 +53,7 @@ else if (window.location.hash == "#read") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - Read";
-	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#read");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/%23read");
 	document.querySelector('meta[property="og:title"]').setAttribute("content", "Gathered Friends - Read");
 }
 else if (window.location.hash == "#contact") {
@@ -62,7 +62,7 @@ else if (window.location.hash == "#contact") {
 	ClearAll();
 	ShrinkHeader();
 	document.title = "Gathered Friends - Contact";
-	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/#contact");
+	document.querySelector('meta[property="og:url"]').setAttribute("content", "https://gatheredfriends.com/%23contact");
 	document.querySelector('meta[property="og:title"]').setAttribute("content", "Gathered Friends - Contact");
 }
 
