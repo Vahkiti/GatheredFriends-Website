@@ -644,7 +644,7 @@ img.logos {
 
 #bc img {
 	float: right;
-	max-width: 15%;
+	max-width: 12%;
 	min-width: 200px;
 	width: auto;
 	height: 100%;
@@ -654,7 +654,7 @@ img.logos {
 
 #woh img {
 	float: left;
-	max-width: 9%;
+	max-width: 8%;
 	min-width: 120px;
 	width: auto;
 	height: 100%;
@@ -665,7 +665,7 @@ img.logos {
 
 #mnl img {
 	float: right;
-	max-width: 15%;
+	max-width: 12%;
 	min-width: 200px;
 	width: auto;
 	height: 100%;
@@ -676,7 +676,7 @@ img.logos {
 
 #bmp img {
 	float: left;
-	max-width: 10%;
+	max-width: 8%;
 	min-width: 150px;
 	width: auto;
 	height: 100%;
