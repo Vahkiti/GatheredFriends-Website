@@ -635,6 +635,13 @@ img.logos {
 	text-align: center;
 }
 
+#intro h1 {
+	background-image:url("../img/Bar.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: contain;
+}
+
 #bc img {
 	float: right;
 	max-width: 15%;
@@ -761,6 +768,13 @@ iframe.contactframe {
 	display: block;
 	position: relative;
 	padding: 20px;
+}
+
+#bottomtext h3 {
+	background-image:url("../img/Bar.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: contain;
 }
 
 input[type=radio] {
