@@ -124,7 +124,7 @@
 	#bmp img {
 		padding: 20px !important;
 		float: none !important;
-		width: 100% !important;
+		max-width: 75% !important;
 	}
 }
 
@@ -631,6 +631,15 @@ img.logos {
 	padding-top: 20px;
 }
 
+section.readsections {
+	margin: 1.5em 0em;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	gap: 1em;
+	padding: 1rem 10vw;
+}
+
 #intro {
 	text-align: center;
 }
@@ -644,31 +653,22 @@ img.logos {
 
 #bc img {
 	float: right;
-	max-width: 12%;
-	min-width: 200px;
-	width: auto;
-	height: 100%;
+	max-width: 30%;
 	padding-left: 10px;
 	cursor: pointer;
 }
 
 #woh img {
 	float: left;
-	max-width: 8%;
-	min-width: 120px;
-	width: auto;
-	height: 100%;
-	padding-right: 10px;
+	max-width: 20%;
+	padding-left: 10px;
 	cursor: pointer;
 	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
 }
 
 #mnl img {
 	float: right;
-	max-width: 12%;
-	min-width: 200px;
-	width: auto;
-	height: 100%;
+	max-width: 25%;
 	padding-left: 10px;
 	cursor: pointer;
 	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
@@ -676,11 +676,8 @@ img.logos {
 
 #bmp img {
 	float: left;
-	max-width: 8%;
-	min-width: 150px;
-	width: auto;
-	height: 100%;
-	padding-right: 10px;
+	max-width: 20%;
+	padding-left: 10px;
 	cursor: pointer;
 	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
 }
