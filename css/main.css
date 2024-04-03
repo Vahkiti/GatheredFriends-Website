@@ -118,13 +118,17 @@
 		font-size: 25px !important;
 	}	
 	
-	#bc img,
-	#woh img,
-	#mnl img,
-	#bmp img {
+	#bcimg,
+	#wohimg,
+	#mnlimg,
+	#bmpimg {
 		padding: 20px !important;
-		float: none !important;
 		max-width: 75% !important;
+	}
+	
+	section.readsectionl,
+	section.readsectionr {
+		flex-direction: column !important;
 	}
 }
 
@@ -631,10 +635,19 @@ img.logos {
 	padding-top: 20px;
 }
 
-section.readsections {
+section.readsectionl {
 	margin: 1.5em 0em;
 	display: flex;
 	flex-flow: row nowrap;
+	align-items: center;
+	gap: 1em;
+	padding: 1rem 10vw;
+}
+
+section.readsectionr {
+	margin: 1.5em 0em;
+	display: flex;
+	flex-flow: row-reverse nowrap;
 	align-items: center;
 	gap: 1em;
 	padding: 1rem 10vw;
@@ -651,33 +664,25 @@ section.readsections {
 	background-size: contain;
 }
 
-#bc img {
-	float: right;
+#bcimg {
 	max-width: 30%;
-	padding-left: 10px;
 	cursor: pointer;
 }
 
-#woh img {
-	float: left;
+#wohimg {
 	max-width: 20%;
-	padding-left: 10px;
 	cursor: pointer;
 	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
 }
 
-#mnl img {
-	float: right;
+#mnlimg {
 	max-width: 25%;
-	padding-left: 10px;
 	cursor: pointer;
 	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
 }
 
-#bmp img {
-	float: left;
+#bmpimg {
 	max-width: 20%;
-	padding-left: 10px;
 	cursor: pointer;
 	filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
 }
