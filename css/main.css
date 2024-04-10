@@ -617,6 +617,17 @@ img.logos {
 	padding-top: 20px;
 }
 
+#bio1 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(999, 999, 999, .65);
+    justify-content: center;
+	align-items: center;
+	position: fixed;
+	min-width: 90%;
+	min-height: 70%;
+}
+
 #watch {
 	display: none;
 	width: 0%;
