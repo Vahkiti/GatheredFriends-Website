@@ -192,42 +192,27 @@ document.getElementById("contactbutton").onclick = function () {
 document.getElementById("dot1").onclick = function () {
 	HideBios();
 	document.getElementById("bio1").style.display = "block";
-	setTimeout(function () {
-		document.getElementById("bio1").style.opacity = "100%";
-	}, 500);
-	document.getElementById("bio2").style.opacity = "0";
-	document.getElementById("bio3").style.opacity = "0";
-	document.getElementById("bio4").style.opacity = "0";
+	document.getElementById("bio1").style.opacity = "100%";
 }
 document.getElementById("dot2").onclick = function () {
 	HideBios();
-	document.getElementById("bio1").style.opacity = "0";
 	document.getElementById("bio2").style.display = "block";
-	setTimeout(function () {
-		document.getElementById("bio2").style.opacity = "100%";
-	}, 500);
-	document.getElementById("bio3").style.opacity = "0";
-	document.getElementById("bio4").style.opacity = "0";
+	document.getElementById("bio2").style.opacity = "100%";
 }
 document.getElementById("dot3").onclick = function () {
 	HideBios();
-	document.getElementById("bio1").style.opacity = "0";
-	document.getElementById("bio2").style.opacity = "0";
 	document.getElementById("bio3").style.display = "block";
-	setTimeout(function () {
-		document.getElementById("bio3").style.opacity = "100%";
-	}, 500);
-	document.getElementById("bio4").style.opacity = "0";
+	document.getElementById("bio3").style.opacity = "100%";
 }
 document.getElementById("dot4").onclick = function () {
 	HideBios();
-	document.getElementById("bio1").style.opacity = "0";
-	document.getElementById("bio2").style.opacity = "0";
-	document.getElementById("bio3").style.opacity = "0";
 	document.getElementById("bio4").style.display = "block";
-	setTimeout(function () {
-		document.getElementById("bio4").style.opacity = "100%";
-	}, 500);	
+	document.getElementById("bio4").style.opacity = "100%";
+}
+document.getElementById("dot5").onclick = function () {
+	HideBios();
+	document.getElementById("bio5").style.display = "block";
+	document.getElementById("bio5").style.opacity = "100%";
 }
 
 //Fade Functions
@@ -310,9 +295,7 @@ function HideBios() {
 	document.getElementById("bio2").style.opacity = "0";
 	document.getElementById("bio3").style.opacity = "0";
 	document.getElementById("bio4").style.opacity = "0";
-
-
-
+	document.getElementById("bio5").style.opacity = "0";
 }
 
 function ClearAll() {

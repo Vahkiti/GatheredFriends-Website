@@ -617,7 +617,7 @@ img.logos {
 	padding-top: 20px;
 }
 
-#controls {
+#panel {
     display: flex;
     flex-direction: row;
     background-color: rgba(999, 999, 999, .65);
@@ -628,29 +628,36 @@ img.logos {
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-#controls h2,
-#controls a {
+#panel h2,
+#panel a {
 	color: black;
 	font-size: 100px;
 	align-self: flex-end;
 	cursor: pointer;
 }
 
-#controls a:hover {
+#panel a:hover {
     color: darkgray;
 }
 
-#controls a:active {
+#panel a:active {
     color: lightgray;
 }
 
 #bio1,
 #bio2,
 #bio3,
-#bio4 {
+#bio4,
+#bio5 {
+	position: absolute;
 	height: 100px;
+	padding: 20px;
 	opacity: 0%;
 	transition: ease-in-out all 0.5s;
+}
+
+#bio1 {
+	opacity: 100%;
 }
 
 #watch {
