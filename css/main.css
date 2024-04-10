@@ -630,7 +630,6 @@ img.logos {
 
 #panel h2,
 #panel a {
-	color: black;
 	font-size: 100px;
 	align-self: flex-end;
 	cursor: pointer;
@@ -644,6 +643,12 @@ img.logos {
     color: lightgray;
 }
 
+#panel img {
+	max-width: 30%;
+	min-width: 200px;
+	float: right;
+}
+
 #bio1,
 #bio2,
 #bio3,
@@ -651,6 +656,7 @@ img.logos {
 #bio5 {
 	position: absolute;
 	height: 100px;
+	font-size: 30px;
 	padding: 20px;
 	opacity: 0%;
 	transition: ease-in-out all 0.5s;
@@ -659,6 +665,18 @@ img.logos {
 #bio1 {
 	opacity: 100%;
 }
+
+#dot1 {
+	color: white;
+}
+
+#dot2,
+#dot3,
+#dot4,
+#dot5 {
+	color: black;
+}
+
 
 #watch {
 	display: none;
