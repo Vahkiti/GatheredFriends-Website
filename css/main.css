@@ -130,6 +130,20 @@
 	section.readsectionr {
 		flex-direction: column !important;
 	}
+	
+	#panel b {
+		display: block;
+		font-size: 20px !important;
+		line-height: 20px;
+		margin: 0px;
+	}
+	
+	#bio,
+	#bio img{
+		text-align: center !important;
+		flex-direction: column !important;
+		float: none !important;
+	}
 }
 
 @media screen and (max-height: 480px) {
