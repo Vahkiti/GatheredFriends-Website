@@ -136,9 +136,9 @@
 	}
 	
 	#aboutcontrols {
-		position: fixed;
+		position: relative !important;
 		right: auto !important;
-		bottom: 30px !important;
+		top: 130px !important;
 		font-size: 100px;
 		cursor: pointer;
 		z-index: 11;
@@ -175,6 +175,7 @@
 		position: relative !important;
 		width: 100% !important;
 		margin-left: auto !important;
+		padding-top: 0.7em !important;
 	}
 	
 	#head {
@@ -212,7 +213,7 @@
 	#bio3,
 	#bio4,
 	#bio5 {
-		font-size: 15px !important;
+		font-size: 12px !important;
 	}
 	
 	#head {
@@ -223,8 +224,8 @@
 	#banner {
 		position: fixed;
 		max-width: 1900px;
-		width: 30% !important;
-		padding-top: 1.5em;
+		width: 25% !important;
+		padding-top: 0.7em !important;
 		margin-left: -20px;
 		z-index: -10;
 	}
@@ -718,6 +719,8 @@ img.logos {
 	font-size: 100px;
 	cursor: pointer;
 	z-index: 11;
+	margin: 0px;
+	-webkit-tap-highlight-color: transparent;
 }
 
 #aboutcontrols a:hover {
