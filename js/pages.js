@@ -189,6 +189,41 @@ document.getElementById("contactbutton").onclick = function () {
 		ShrinkHeader();
 	}, 550);	
 }
+document.getElementById("dot1").onclick = function () {
+	HideBios();
+	document.getElementById("bio1").style.display = "block";
+	document.getElementById("bio1").style.opacity = "100%";
+	document.getElementById("bio1").style.zIndex = "10";
+	document.getElementById("dot1").style.color = "white";
+}
+document.getElementById("dot2").onclick = function () {
+	HideBios();
+	document.getElementById("bio2").style.display = "block";
+	document.getElementById("bio2").style.opacity = "100%";
+	document.getElementById("bio2").style.zIndex = "10";
+	document.getElementById("dot2").style.color = "white";
+}
+document.getElementById("dot3").onclick = function () {
+	HideBios();
+	document.getElementById("bio3").style.display = "block";
+	document.getElementById("bio3").style.opacity = "100%";
+	document.getElementById("bio3").style.zIndex = "10";
+	document.getElementById("dot3").style.color = "white";
+}
+document.getElementById("dot4").onclick = function () {
+	HideBios();
+	document.getElementById("bio4").style.display = "block";
+	document.getElementById("bio4").style.opacity = "100%";
+	document.getElementById("bio4").style.zIndex = "10";
+	document.getElementById("dot4").style.color = "white";
+}
+document.getElementById("dot5").onclick = function () {
+	HideBios();
+	document.getElementById("bio5").style.display = "block";
+	document.getElementById("bio5").style.opacity = "100%";
+	document.getElementById("bio5").style.zIndex = "10";
+	document.getElementById("dot5").style.color = "white";
+}
 
 //Fade Functions
 function HideHeader() {
@@ -263,6 +298,24 @@ function ResetPage() {
 		document.getElementById("contact").style.opacity = "0";
 		document.getElementById("contact").style.width = "0%";
 	}
+}
+
+function HideBios() {
+	document.getElementById("bio1").style.opacity = "0";
+	document.getElementById("bio2").style.opacity = "0";
+	document.getElementById("bio3").style.opacity = "0";
+	document.getElementById("bio4").style.opacity = "0";
+	document.getElementById("bio5").style.opacity = "0";	
+	document.getElementById("bio1").style.zIndex = "0";
+	document.getElementById("bio2").style.zIndex = "0";
+	document.getElementById("bio3").style.zIndex = "0";
+	document.getElementById("bio4").style.zIndex = "0";
+	document.getElementById("bio5").style.zIndex = "0";
+	document.getElementById("dot1").style.color = "black";
+	document.getElementById("dot2").style.color = "black";
+	document.getElementById("dot3").style.color = "black";
+	document.getElementById("dot4").style.color = "black";
+	document.getElementById("dot5").style.color = "black";
 }
 
 function ClearAll() {
