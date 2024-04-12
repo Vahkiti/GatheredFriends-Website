@@ -316,6 +316,7 @@ function HideBios() {
 	document.getElementById("dot3").style.color = "black";
 	document.getElementById("dot4").style.color = "black";
 	document.getElementById("dot5").style.color = "black";
+	document.getElementById("contents").scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function ClearAll() {
@@ -332,6 +333,7 @@ function FadeOutPage() {
 	document.getElementById(CurrentPage).style.transition = "opacity 0.5s";
 	document.getElementById("contents").style.width = "auto";
 	document.getElementById("contents").style.overflow = "hidden";
+	document.getElementById("contents").scrollTo({ top: 0, behavior: 'smooth' });
 	setTimeout(function () {
 		ResetPage();
 		document.getElementById(CurrentPage).style.width = "0%";
