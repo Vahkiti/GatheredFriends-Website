@@ -219,6 +219,7 @@
 	#head {
 		bottom: 150px !important;
 		height: 500px !important;
+		right: -35px;
 	}
 	
 	#banner {
@@ -757,7 +758,6 @@ img.logos {
 	float: right;
 	position: relative;
 	bottom: 100px;
-	right: -35px;
 }
 
 #bio1,
